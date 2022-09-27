@@ -83,3 +83,146 @@
 i{
     font-size: 200px;
 }
+.divFive{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.productGrids{
+    display: grid;
+    grid-template-columns: 370px 350px 350px;
+    /* grid-template-rows: auto; */
+    grid-template-areas: "a b c"
+    "d e f";
+    /* align-items: center; */
+    justify-content: center;
+    column-gap: 100px;
+    row-gap: 100px;
+}
+.a,.b,.c,.d,.e,.f{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    /* justify-items: center; */
+}
+
+.productTitle{
+    font-weight: 500;
+    font-size: 22px;
+}
+.productDesc{
+    font-size: 14px;
+    text-align: center;
+    color: gray;
+}
+.divSix{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #1C1F4C;
+    color: white;
+    height: 300px;
+}
+.divSeven{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: whitesmoke;
+    padding: 80px;
+}
+.pricingTitle{
+    font-size: 25px;
+    color: lightgrey;
+}
+.pricingDesc{
+    color: grey;
+}
+.pricingInputs{
+    display: flex;
+    gap: 50px;
+}
+.pricingInputOne, .pricingInputTwo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: darkgray
+}
+.pricingInputOne label, .pricingInputTwo label {
+    font-size: 10px;
+}
+.pricingInputOne input, .pricingInputTwo input {
+  background-color: white;
+  border: solid 0.1px lightgray;
+  height: 40px;
+  padding: 5px;
+  outline: none;
+}
+.divEight{
+    display: flex;
+    color: white;
+    height: 500px;
+}
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color:#1C1F4C;
+    height: auto;
+    align-items: center;
+    padding: 40px;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+   
+}
+.contactForm input {
+    color: white;
+    background-color:#1C1F4C;
+    width: 400px;
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-bottom: solid 2px white;
+}
+.nameInput, .emailInput{
+    height: 50px;
+
+}
+.messageInput{
+    height: 200px;
+}
+.contactForm button{
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: #1C1F4C;
+    align-self: right;
+    margin: 10px;
+    
+}
+
+.locationMap{
+    width: 50%;
+
+}
+.divNine{
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+.divTen{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+}
