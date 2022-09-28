@@ -1,0 +1,59 @@
+<div class="mainDiv">
+    <div class="content">
+        <div class="leftDiv">
+            <div class="divOne">
+                <div class="logo">
+                    <!-- logo image goes here -->
+                    <p>VERIFIEDINBOX</p>
+                </div>
+                <div class="homeIcon">
+                    <!-- home icon goes here -->
+                    <p>home</p>
+                </div>
+            </div>
+            <div class="divTwo">
+                <h3>Login your account</h3>
+                <form class="loginForm" (ngSubmit)="onLogin()" [formGroup]="loginForm">
+                    <div class="emailDiv" >
+                        <label for="email"> E-Mail</label>
+                        <input type="text" placeholder="Your E-Mail" formControlName="email">
+                        <small *ngIf="f['email'].touched && f['email'].errors && f['email'].errors['required']">* Email is required</small>
+                        <small *ngIf="f['email'].errors && f['email'].errors['email']">* Please enter a valid email</small>
+                    </div>
+                    <div class="passwordDiv" >
+                        <label for="password"> Password</label>
+                        <input type="password" placeholder="Your Password" formControlName="password">
+                        <small *ngIf="f['password'].touched && f['password'].errors && f['password'].errors['required'] ">* Password is required</small>
+                        <small *ngIf="f['password'].errors && f['password'].errors['minLength'] " >* Password length should not be less than 8</small>
+                    </div>
+                    <div class="actions">
+                        <button class="registerBtn" routerLink="/auth/register">Register</button>
+                        <button class="loginBtn" type="submit" [disabled]="loginForm.invalid">Login</button>
+                    </div>
+                </form>
+                <div class="divThree">
+                    <div class="remember">
+
+                        <input type="checkbox" >
+    
+                        <p>Remember me</p>
+                    </div>
+                    <div class="forgot">
+                       <a href="">forgot password ?</a>
+                    </div>
+                    
+                </div>
+           
+            </div>
+            <div class="divFour">
+                <a href="">Privacy & Policy</a>
+                <p>DE.EN</p>
+            </div>
+          
+        </div>
+        <div class="rightDiv">
+            <!-- image goes here -->
+        </div>
+    </div>
+
+</div>
