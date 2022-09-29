@@ -3,12 +3,12 @@
         <div class="leftDiv">
             <div class="divOne">
                 <div class="logo">
-                    <!-- logo image goes here -->
-                    <p>VERIFIEDINBOX</p>
+                    <img src="../../../../assets/logo.png" alt="">
                 </div>
                 <div class="homeIcon">
-                    <!-- home icon goes here -->
-                    <p>home</p>
+                    
+                    <mat-icon class="homeIc" fontSet="material-icons-outlined" routerLink="/home">home</mat-icon>
+
                 </div>
             </div>
             <div class="divTwo">
@@ -28,7 +28,7 @@
                     </div>
                     <div class="actions">
                         <button class="registerBtn" routerLink="/auth/register">Register</button>
-                        <button class="loginBtn" type="submit" [disabled]="loginForm.invalid">Login</button>
+                        <button class="loginBtn" type="submit" routerLink="/user/dashboard">Login</button>  <!-- [disabled]="loginForm.invalid"  -->
                     </div>
                 </form>
                 <div class="divThree">
@@ -53,6 +53,7 @@
         </div>
         <div class="rightDiv">
             <!-- image goes here -->
+            <img src="../../../../assets/login.png" alt="">
         </div>
     </div>
 

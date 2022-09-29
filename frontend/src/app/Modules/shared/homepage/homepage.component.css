@@ -12,9 +12,8 @@
     padding: 20px 50px;
     justify-content: space-between;
 }
-.logoName{
-    font-size: 30px;
-    font-weight: 500;
+.logoIcon{
+    height: 50px;
 }
 .navList{
     display: flex;
@@ -52,7 +51,7 @@
 }
 .divFour{
     display: flex;
-    padding: 100px;
+    padding: 100px 100px 50px 100px;
     width: 80%;
     height: fit-content;
     gap: 60px;
@@ -72,6 +71,9 @@
 .rightFour{
 
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 .about, .products{
     font-size: 35px;
@@ -83,6 +85,14 @@
 i{
     font-size: 200px;
 }
+.productIcon{
+    width: 50px;
+
+}
+.productIcon1{
+    width: 40px;
+
+}
 .divFive{
     padding: 100px;
     display: flex;
@@ -92,30 +102,44 @@ i{
 .productGrids{
     display: grid;
     grid-template-columns: 370px 350px 350px;
-    /* grid-template-rows: auto; */
     grid-template-areas: "a b c"
     "d e f";
-    /* align-items: center; */
     justify-content: center;
-    column-gap: 100px;
+    column-gap: 40px;
     row-gap: 100px;
+    justify-content: center;
+    align-items: center;
 }
+
 .a,.b,.c,.d,.e,.f{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     align-items: center;
-    /* justify-items: center; */
+    padding: 30px;
+   
 }
+.a,.b,.d,.e{
+    border-right: solid 1px #DCDCDC ;
+    
+}
+/* .a,.b,.c{
+    border-bottom: solid 1px #DCDCDC ;
+    
+
+} */
+
 
 .productTitle{
     font-weight: 500;
     font-size: 22px;
+    color: #4C4C4E;
 }
 .productDesc{
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
-    color: gray;
+    color: #979797;
+    
 }
 .divSix{
     display: flex;
@@ -134,16 +158,26 @@ i{
     background-color: whitesmoke;
     padding: 80px;
 }
+.pTag{
+    background-color: #1C1F4C;
+    padding: 30px;
+    border-radius: 250px;
+}
+.pTag img{
+    height: 70px;
+}
 .pricingTitle{
-    font-size: 25px;
+    font-size: 40px;
     color: lightgrey;
 }
 .pricingDesc{
     color: grey;
+    font-size: 30px;
 }
 .pricingInputs{
     display: flex;
     gap: 50px;
+    
 }
 .pricingInputOne, .pricingInputTwo {
     display: flex;
@@ -158,7 +192,8 @@ i{
   background-color: white;
   border: solid 0.1px lightgray;
   height: 40px;
-  padding: 5px;
+  width: 350px;
+  padding: 10px;
   outline: none;
 }
 .divEight{
@@ -205,8 +240,12 @@ i{
     outline: none;
     border: none;
     color: #1C1F4C;
-    align-self: right;
     margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+
     
 }
 

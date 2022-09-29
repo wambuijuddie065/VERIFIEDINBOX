@@ -1,0 +1,122 @@
+.mainContainer{
+    display: flex;
+}
+.leftDiv{
+    width: 20%;
+    
+}
+.rightDiv{
+    width: 80%;
+    
+}
+.rightDiv,.leftDiv{
+    display: flex;
+    flex-direction: column;
+
+} 
+.topLeft{
+    
+    background-color: #1E214E;
+    color: white;
+    
+    
+
+}
+.topLeft ,.topRight{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    padding: 20px;
+
+
+}
+.bottomLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+}
+.titleHeader{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    color: lightgray;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.divValidator .details a{
+color: #1E214E;
+text-decoration: none;
+}
+.divValidator,.divScoring, .divCredit, .divTools,.divAccount{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+    border-bottom: solid 2px lightgray;
+
+}
+.divValidator .details,.divScoring .details , .divCredit .details , .divTools .details ,
+.divAccount .details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.divScoring .details  a, .divCredit .details a , .divTools .details a ,
+.divAccount .details a {
+    text-decoration: none;
+    color: gray;
+}
+.topRight{
+    display: flex;
+    justify-content: space-between;
+}
+.topRight .searchDiv input{
+    background-color:#F3F3F3;
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.middleRight{
+    background-color: #DFE1E8;
+    padding: 10px;
+}
+.bottomRight{
+    background-color: #F3F6F9;
+    padding: 10px;
+    height:100%;
+}
+/* .routerOutlet{
+    background-color: white;
+} */
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links{
+    display: flex;
+    gap: 10px;
+}
+.links a, .links p{
+    color: #6A95F6;
+    text-decoration: none;
+}
+.contactBtn button{
+    height: 40px;
+    padding: 5px;
+    width: 140px;
+    background-color: #1E214E;
+    color: white;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}

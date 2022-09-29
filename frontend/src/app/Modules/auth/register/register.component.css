@@ -1,10 +1,10 @@
-/* .mainDiv{
-    background-color: whitesmoke;
+.mainDiv{
+    background-color: #FAFAFA;
+   
    
     
-} */
+}
 .content{
-    border: solid 2px gray;
     margin: 30px auto;
     display: flex;
     width: 80%;
@@ -19,8 +19,15 @@
     gap: 30px;
    border-right: solid 2px grey;
 }
+.logo img{
+    height: 40px;
+}
 .rightDiv{
     width: 50%;
+}
+.rightDiv img{
+    height: 100%;
+    width: 100%;
 }
 .divOne{
     display: flex;

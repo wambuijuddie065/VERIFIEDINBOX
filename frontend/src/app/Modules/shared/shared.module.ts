@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomepageComponent } from './homepage/homepage.component';
 import { SharedRoutingModule } from './shared-routing.module';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -11,7 +12,8 @@ import { SharedRoutingModule } from './shared-routing.module';
   ],
   imports: [
     CommonModule,
-    SharedRoutingModule
+    SharedRoutingModule,
+    MatIconModule,
   ],
   exports:[
     HomepageComponent

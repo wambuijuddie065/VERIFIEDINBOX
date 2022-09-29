@@ -5,6 +5,7 @@ import { RegisterComponent } from './register/register.component';
 import { AuthRoutingModule } from './auth-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AccountDetailsComponent } from './account-details/account-details.component';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -18,7 +19,8 @@ import { AccountDetailsComponent } from './account-details/account-details.compo
     CommonModule,
     AuthRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatIconModule,
   ]
 })
 export class AuthModule { }
