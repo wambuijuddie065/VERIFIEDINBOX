@@ -83,6 +83,13 @@ text-decoration: none;
     width: 250px;
     border-radius: 5px;
 }
+.emailIcon,.notificationIcon{
+    color: #ABABAA;
+}
+.cirleIcon{
+    color: #1E214E;
+    font-size: 50px;
+}
 
 .middleRight{
     background-color: #DFE1E8;
