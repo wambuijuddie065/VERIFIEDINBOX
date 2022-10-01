@@ -1,20 +1,21 @@
 <div class="mainContainer">
 <div class="leftDiv">
     <div class="topLeft">
-        <p>ICON</p>
-        <p>VERIFIED INBOX</p>
-        <p>--</p>   <!-- hambuger menu -->
+        
+        <img src="../../../../assets/logo.png" alt="">
+        <mat-icon>menu</mat-icon>
        
     </div>
     <div class="bottomLeft">
         <div class="divValidator">
             <div class="titleHeader">
-                <h3>IC</h3>
+                <img src="../../../../assets/email-validator.png" alt="">
                 <p>EMAIL VALIDATOR</p>
 
             </div>
             <div class="details">
-                <a href="">Upload your profile</a>
+                <a href="" routerLink="/user/dashboard/upload-profile"
+                routerLinkActive="active">Upload your profile</a>
                 <a href="">Download your result</a>
                 <a href="">Single email validator</a>
                 <a href="">Integrations</a>
@@ -23,7 +24,7 @@
         </div>
         <div class="divScoring">
             <div class="titleHeader">
-                <h3>IC</h3>
+                <img src="../../../../assets/AI.png" alt="">
                 <p>AI EMAIL SCORING</p>
 
             </div>
@@ -34,8 +35,8 @@
         </div>
         <div class="divCredit">
             <div class="titleHeader">
-                <h3>IC</h3>
-                <p>BUY CREDIT</p>
+               
+                <p style="margin-left: 10px;" >BUY CREDIT</p>
 
             </div>
             <div class="details">
@@ -46,7 +47,7 @@
         </div>
         <div class="divTools">
             <div class="titleHeader">
-                <h3>IC</h3>
+                <img src="../../../../assets/deliverability.png" alt="">
                 <p>DELIVERABILTY TOOLS</p>
 
             </div>
@@ -59,7 +60,7 @@
         </div>
         <div class="divAccount">
             <div class="titleHeader">
-                <h3>IC</h3>
+                <img src="../../../../assets/account-info.png" alt="">
                 <p>ACCOUNT INFO</p>
 
             </div>
@@ -77,23 +78,20 @@
     <div class="topRight">
         <div class="searchDiv">
             <input type="search" placeholder="search">
-            <!-- circle -->
             
-            <p>Bernard Odote</p>
-            <!-- help -->
-            <!-- <mat-icon>log_out</mat-icon> -->
         </div>
         
         <div class="profileDetails">
             <mat-icon class="emailIcon" >markunread</mat-icon>
             <mat-icon class="notificationIcon">notifications</mat-icon>
             <mat-icon class="circleIcon">circle_outline</mat-icon>
+            <p>Bernard Odote</p>
+            <mat-icon class="helpIcon">help_outline</mat-icon>
+            <mat-icon class="logoutIcon" routerLink="/home">power_settings_new</mat-icon>
          
         </div>
     </div>
-    <div class="middleRight">
-        <p>ACCOUNT INFO</p>
-    </div>
+    
     <div class="bottomRight">
         <div class="routerOutlet">
             <router-outlet></router-outlet>
@@ -108,6 +106,10 @@
                 <button>Contact Us</button>
             </div>
             
+        </div>
+        <div class="chatDiv">
+            <mat-icon>chat</mat-icon>
+           <p> Chat with us</p>
         </div>
     </div>
 </div>

@@ -1,0 +1,31 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+    padding: 20px;
+    color: gray;
+    margin: 25px;
+}
+.middleRight{
+    background-color: #DFE1E8;
+    padding: 10px;
+}
+.divOne{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+li{
+    display: flex;
+    gap: 10px;
+}
+mat-icon{
+    color: gray;
+}

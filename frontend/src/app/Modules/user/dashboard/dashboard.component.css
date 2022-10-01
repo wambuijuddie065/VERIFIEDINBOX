@@ -22,11 +22,16 @@
     
 
 }
+.topLeft img{
+    width: 60%;
+    height: 40px;
+}
 .topLeft ,.topRight{
     display: flex;
     justify-content: space-between;
     height: 40px;
     padding: 20px;
+    align-items: center;
 
 
 }
@@ -44,10 +49,13 @@
     font-size: 14px;
     margin-left: 20px;
 }
-
+.titleHeader img{
+    height: 15px;
+}
 .divValidator .details a{
 color: #1E214E;
 text-decoration: none;
+padding: 10px;
 }
 .divValidator,.divScoring, .divCredit, .divTools,.divAccount{
     display: flex;
@@ -59,17 +67,21 @@ text-decoration: none;
 }
 .divValidator .details,.divScoring .details , .divCredit .details , .divTools .details ,
 .divAccount .details {
+   
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     font-size: 13px;
     text-decoration: none;
-    margin-left: 30px;
+    /* margin-left: 30px; */
+    /* text-align: center; */
 }
 .divScoring .details  a, .divCredit .details a , .divTools .details a ,
 .divAccount .details a {
     text-decoration: none;
     color: gray;
+    padding: 10px;
+   
 }
 .topRight{
     display: flex;
@@ -83,34 +95,61 @@ text-decoration: none;
     width: 250px;
     border-radius: 5px;
 }
-.emailIcon,.notificationIcon{
-    color: #ABABAA;
-}
-.cirleIcon{
-    color: #1E214E;
-    font-size: 50px;
+.profileDetails{
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
-.middleRight{
-    background-color: #DFE1E8;
-    padding: 10px;
+.emailIcon,.notificationIcon{
+    color: #ABABAA;
+    font-size: 20px;
 }
+.helpIcon{
+    color: #ABABAA;
+font-size: 15px;
+margin-top: 10px;
+}
+.circleIcon{
+    color: #1E214E;
+    font-size: 40px;
+    text-align: center;
+    padding:5px 20px 5px 5px;
+    display: flex;
+    align-items: center;
+}
+.logoutIcon{
+    color: #1E214E;
+    font-size: 20px;
+    font-weight: 700;
+}
+.profileDetails p{
+    
+    margin-top: 10px;
+     color: #ABABAA;
+     font-size: 14px;
+ }
+
+
 .bottomRight{
     background-color: #F3F6F9;
-    padding: 10px;
+    /* padding: 0 25px; */
     height:100%;
 }
-/* .routerOutlet{
-    background-color: white;
-} */
+
 .contact{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
+    padding:0 25px 25px 25px;
 }
 .links{
     display: flex;
     gap: 10px;
+    
 }
 .links a, .links p{
     color: #6A95F6;
@@ -126,4 +165,26 @@ text-decoration: none;
     outline: none;
     border: none;
     border-radius: 5px;
+}
+.chatDiv{
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    padding: 10px 40px;
+    color: #1E214E;
+    width: fit-content;
+    border-radius: 100px;
+    align-items: center;
+   margin-left: auto;
+   margin-right: 25px;
+   /* margin-bottom: auto; */
+}
+.chatDiv p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.active{
+    background-color: #F3F3F3;
+    color: gray;
+    border-left:solid 3px #1E214E ;
 }
