@@ -7,6 +7,9 @@ import { AccountInfoComponent } from './account-info/account-info.component';
 import { MatIconModule } from '@angular/material/icon';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { UploadProfileComponent } from './upload-profile/upload-profile.component';
+import { DownloadResultsComponent } from './download-results/download-results.component';
+import { SingleEmailValidatorComponent } from './single-email-validator/single-email-validator.component';
+import { IntegrationsComponent } from './integrations/integrations.component';
 
 
 @NgModule({
@@ -14,7 +17,10 @@ import { UploadProfileComponent } from './upload-profile/upload-profile.componen
     DashboardComponent,
     AccountInfoComponent,
     WelcomeComponent,
-    UploadProfileComponent
+    UploadProfileComponent,
+    DownloadResultsComponent,
+    SingleEmailValidatorComponent,
+    IntegrationsComponent
   ],
   imports: [
     CommonModule,

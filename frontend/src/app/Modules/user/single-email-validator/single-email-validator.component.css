@@ -17,10 +17,6 @@
     flex-direction: column;
     gap: 20px;
 }
-.divOne a{
-    color: #6A95F6;
-    text-decoration: none;
-}
 .divTwo{
     display: flex;
     gap: 15px;
@@ -48,51 +44,26 @@
 .divThree{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
 }
-.upload{
+.emailDiv{
     display: flex;
+    padding: 15px 20px;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-}
-.attachment{
-    display: flex;
-    gap: 40px;
-    align-items: center;
-}
-.attachmentIcon{
-    background-color: #e2ecf9;
-    color: #6A95F6;
-    padding: 10px;
-}
-.actions{
-    display: flex;
-    gap: 50px;
-}
-.addFiles button{
-    background-color:#6A95F6 ;
-    color: white;
-    padding: 10px;
-    height: 40px;
-    width: 200px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-}
-.divFour{
-    color: #6A95F6;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    align-items: center;
-    text-align: center;
     background-color: white;
-    border: dashed 2px #6A95F6 ;
-    height: 300px;
-    border-radius: 15px;
 }
-.divFour mat-icon{
-    font-size: 30px;
+.emailDiv input{
+    border: none;
+    outline: none;
+    background-color: white;
+}
+.emailDiv button{
+    border: solid 1px #6A95F6;
+    color: #6A95F6;
+    height: 40px;
     padding: 10px;
-   
+    width: 180px;
+    background-color: white;
+    outline: none;
 }

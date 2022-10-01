@@ -1,0 +1,48 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    color: gray;
+    margin: 25px;
+}
+.middleRight{
+    background-color: #DFE1E8;
+    padding: 10px;
+}
+.divOne{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.filesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.file{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.file mat-icon{
+    padding:30px;
+
+    font-size: 60px;
+    color: grey;
+
+}
+.file button{
+    outline: none;
+    border: none;
+    background-color: #1E214E;
+    color: white;
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+}

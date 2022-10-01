@@ -1,0 +1,66 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    color: gray;
+    margin: 25px;
+}
+.middleRight{
+    background-color: #DFE1E8;
+    padding: 10px;
+}
+.divOne{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.divOne a{
+    color: #6A95F6;
+    text-decoration: none;
+}
+#viewDiv{
+
+    display: flex;
+    justify-content: flex-end;
+}
+#viewDiv button{
+    
+    width: 180px;
+    padding: 10px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    color:white;
+    background-color: #1E214E;
+   
+}
+.diTwo{
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eaeaeb;
+    padding: 10px 20px;
+    color: lightgray;
+    font-weight: 400;
+    
+
+}
+.bottom{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    color: lightgrey;
+   
+}
