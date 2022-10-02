@@ -1,3 +1,4 @@
+
 .mainContainer{
     display: flex;
     flex-direction: column;
@@ -55,6 +56,9 @@
     justify-content: space-between;
     align-items: center;
 }
+.fileInput {  
+    display: none;  
+  }  
 .attachment{
     display: flex;
     gap: 40px;
@@ -68,6 +72,12 @@
 .actions{
     display: flex;
     gap: 50px;
+}
+.actions button{
+    outline: none;
+    border: none;
+    background-color:#F3F6F9;
+   
 }
 .addFiles button{
     background-color:#6A95F6 ;

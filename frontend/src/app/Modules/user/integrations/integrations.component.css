@@ -29,20 +29,37 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
+    border: solid 2px #F7F9FB;
 }
 .file mat-icon{
-    padding:30px;
-
-    font-size: 60px;
+    width: 150px;
+    height: 120px;
+    font-size: 120px;
     color: grey;
 
 }
 .file button{
     outline: none;
     border: none;
-    background-color: #1E214E;
-    color: white;
-    height: 25px;
-    width: 100px;
+    /* background-color: #1E214E; */
+    background-color: #F3F6F9;
+    color: grey;
+    /* color: white; */
+    height: 40px;
+    width: 120px;
     border-radius: 5px;
 }
+/* .file button:hover{
+    
+    background-color: #1E214E;
+    color: white;
+   
+}
+.file mat-icon:hover{
+   
+    color:#C7E2FF;
+
+}
+.file:hover{
+    border: solid 2px #C7E2FF ;
+} */

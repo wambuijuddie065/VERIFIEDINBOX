@@ -5,11 +5,11 @@
     <div class="divOne">
         <p> Let's get started by <b>Uploading your file here</b></p>
         <p>Select a CSV, TXT, XLS or XLSX file to upload. Then click on "Validate File" . You will be notified via email once your
-            entire list has been validated. You can always check the <a href="">
+            entire list has been validated. You can always check the <a href=""  routerLink="/user/dashboard/download-results" routerLinkActive="active">
                 "Email Validation. Download your result"</a> page to get the current status.
         </p>
         <p> Please take a look at our <a href=""> accepted
-            file format</a>s before uploading file</p>
+            file formats</a> before uploading file</p>
     </div>
     <div class="divTwo">
         <p> You have <b>5</b> available credits </p>
@@ -29,12 +29,15 @@
                 <p>Hikoot_Clien_Pitch_V2.pdf</p>
             </div>
             <div class="actions">
-                <p style="color: #6A95F6;">+ Add note</p>
-                <p>Edit</p>
-                <p>Remove</p>
+                <button style="color: #6A95F6;">+ Add note</button>
+                <button style="color: gray;">Edit</button>
+                <button style="color: gray;">Remove</button>
             </div>
             <div class="addFiles">
-                <button>+ Add files</button>
+                <input type="file" class="fileInput"  
+              (change)="onChange($event)" #fileUpload>
+                
+                <button (click)=" onUpload()">+ Add files</button>
             </div>
             
             

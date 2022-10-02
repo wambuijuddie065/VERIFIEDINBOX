@@ -10,6 +10,7 @@ import { UploadProfileComponent } from './upload-profile/upload-profile.componen
 import { DownloadResultsComponent } from './download-results/download-results.component';
 import { SingleEmailValidatorComponent } from './single-email-validator/single-email-validator.component';
 import { IntegrationsComponent } from './integrations/integrations.component';
+import { APIKeysComponent } from './api-keys/api-keys.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { IntegrationsComponent } from './integrations/integrations.component';
     UploadProfileComponent,
     DownloadResultsComponent,
     SingleEmailValidatorComponent,
-    IntegrationsComponent
+    IntegrationsComponent,
+    APIKeysComponent
   ],
   imports: [
     CommonModule,

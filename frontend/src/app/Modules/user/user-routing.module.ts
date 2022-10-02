@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { APIKeysComponent } from './api-keys/api-keys.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DownloadResultsComponent } from './download-results/download-results.component';
 import { IntegrationsComponent } from './integrations/integrations.component';
@@ -22,7 +23,8 @@ const routes: Routes = [
             path: 'single-email-validator',
             component: SingleEmailValidatorComponent,
           },
-          {path:'integrations',component:IntegrationsComponent}
+          {path:'integrations',component:IntegrationsComponent},
+          {path:'API_keys',component:APIKeysComponent}
         ],
       },
     ],
