@@ -1,8 +1,8 @@
 .mainContainer{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    
+    gap:30px;
+    padding: 25px;
     color: gray;
     margin: 20px;
     background-color: white;
@@ -13,16 +13,25 @@
 }
 .divOne{
    
-    padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+   
 }
-.divtwo{
+.divTwo,.divThree,.divFour{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 2px;
 }
-.keys1{
+.keys1,.usage1,.callback1,.validation1,.credit1,.upload1,.scoring1{
+    display:flex;
+    justify-content: space-between;
     background-color: #F8F8F8;
+    padding: 5px 20px;
+}
+.keys2,.usage2,.callback2,.validation2,.credit2,.upload2,.scoring2{
+    background-color:#DFE1E8;
+    padding: 5px 20px;
+}
+.usage2,.callback2,.validation2,.credit2,.upload2,.scoring2{
+    display: none;
 }

@@ -1,0 +1,97 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    color: gray;
+    margin: 25px;
+}
+.middleRight{
+    background-color: #DFE1E8;
+    padding: 10px;
+}
+.divBottom{
+    display: flex;
+    gap: 20px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    width: fit-content;
+    
+
+
+}
+.left p{
+    margin: 20px 20px 0 20px;
+    font-size: 13px;
+}
+.prices{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.leftOne{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+    align-items: center;
+    background-color: #1E214E;
+    color: white;
+    padding: 10px;
+    margin: 20px 20px 0 20px;
+    width: fit-content;
+    
+    
+}
+.priceOne,.priceTwo,.priceThree,.priceFour,.priceFive,.priceSix,
+.priceSeven,.priceEight,.priceNine,.priceTen{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-weight:500;
+    height: 40px;
+    padding: 6px 20px;
+}
+
+.priceTwo,.priceFour,.priceSix,
+.priceEight,.priceTen{
+    background-color: #F1F2F3;
+}
+.rightDiv{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.rightOne{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.packages{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.package{
+    display: flex;
+    gap: 10px;
+    /* align-items: center; */
+    padding: 10px;
+    border: solid 2px #F1F2F3;
+    width: 130px;
+    
+}
+.package mat-icon{
+    color: #A0CDFC;
+    height: fit-content;
+    width: fit-content;
+    font-size: 28px;
+}
+/* .package p{
+    align-self: center;
+} */

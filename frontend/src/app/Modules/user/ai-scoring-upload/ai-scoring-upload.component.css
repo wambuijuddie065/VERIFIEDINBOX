@@ -1,0 +1,108 @@
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    color: gray;
+    margin: 25px;
+}
+.middleRight{
+    background-color: #DFE1E8;
+    padding: 10px;
+}
+.divOne{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.divOne a{
+    color: #6A95F6;
+    text-decoration: none;
+}
+.divTwo{
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.divTwo button{
+    width: 180px;
+    padding: 8px;
+    height: 38px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+   
+}
+.credit{
+    color: grey;
+}
+.plan{
+    color:white;
+    background-color: #1E214E;
+}
+.divThree{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.upload{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fileInput {  
+    display: none;  
+  }  
+.attachment{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.attachmentIcon{
+    background-color: #e2ecf9;
+    color: #6A95F6;
+    padding: 10px;
+}
+.actions{
+    display: flex;
+    gap: 50px;
+}
+.actions button{
+    outline: none;
+    border: none;
+    background-color:#F3F6F9;
+   
+}
+.addFiles button{
+    background-color:#6A95F6 ;
+    color: white;
+    padding: 10px;
+    height: 40px;
+    width: 200px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.divFour{
+    color: #6A95F6;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border: dashed 2px #6A95F6 ;
+    height: 300px;
+    border-radius: 15px;
+}
+.divFour mat-icon{
+    font-size: 30px;
+    padding: 10px;
+   
+}

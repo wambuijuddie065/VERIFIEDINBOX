@@ -4,6 +4,7 @@
 .leftDiv{
     width: 20%;
     
+    
 }
 .rightDiv{
     width: 80%;
@@ -40,6 +41,7 @@
     flex-direction: column;
     gap: 20px;
     padding: 20px 0px;
+   
 }
 .titleHeader{
     display: flex;

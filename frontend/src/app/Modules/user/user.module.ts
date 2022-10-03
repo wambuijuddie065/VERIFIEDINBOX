@@ -11,6 +11,11 @@ import { DownloadResultsComponent } from './download-results/download-results.co
 import { SingleEmailValidatorComponent } from './single-email-validator/single-email-validator.component';
 import { IntegrationsComponent } from './integrations/integrations.component';
 import { APIKeysComponent } from './api-keys/api-keys.component';
+import { AIScoringUploadComponent } from './ai-scoring-upload/ai-scoring-upload.component';
+import { AIScoringDownloadComponent } from './ai-scoring-download/ai-scoring-download.component';
+import { PayAsYouGoComponent } from './pay-as-you-go/pay-as-you-go.component';
+import { SubscriptionComponent } from './subscription/subscription.component';
+import { AutopayComponent } from './autopay/autopay.component';
 
 
 @NgModule({
@@ -22,7 +27,12 @@ import { APIKeysComponent } from './api-keys/api-keys.component';
     DownloadResultsComponent,
     SingleEmailValidatorComponent,
     IntegrationsComponent,
-    APIKeysComponent
+    APIKeysComponent,
+    AIScoringUploadComponent,
+    AIScoringDownloadComponent,
+    PayAsYouGoComponent,
+    SubscriptionComponent,
+    AutopayComponent
   ],
   imports: [
     CommonModule,
