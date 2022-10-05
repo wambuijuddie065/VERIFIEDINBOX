@@ -1,0 +1,37 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    color: gray;
+    margin: 15px;
+}
+
+.middleRight {
+    background-color: #DFE1E8;
+    padding: 10px;
+}
+
+.divBottom {
+    display: flex;
+    gap: 15px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    width: 40%;
+}
+
+.right {
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: black ;
+    height: fit-content;
+}

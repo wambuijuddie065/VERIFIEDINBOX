@@ -21,11 +21,12 @@
     color: white;
     
     
+    
 
 }
 .topLeft img{
     width: 60%;
-    height: 40px;
+    height: 80px;
 }
 .topLeft ,.topRight{
     display: flex;
@@ -43,6 +44,9 @@
     padding: 20px 0px;
    
 }
+/* mat-icon {
+    vertical-align: sub;
+} */
 .titleHeader{
     display: flex;
     justify-content: flex-start;
@@ -172,14 +176,18 @@ margin-top: 10px;
     display: flex;
     gap: 30px;
     background-color: white;
-    padding: 10px 40px;
+    padding: 10px 30px;
     color: #1E214E;
     width: fit-content;
     border-radius: 100px;
     align-items: center;
    margin-left: auto;
    margin-right: 25px;
-   /* margin-bottom: auto; */
+
+ 
+}
+.chatDiv img{
+    width: 35px;
 }
 .chatDiv p{
     font-size: 16px;

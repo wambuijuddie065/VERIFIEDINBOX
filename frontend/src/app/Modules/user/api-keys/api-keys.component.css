@@ -4,7 +4,7 @@
     gap:30px;
     padding: 25px;
     color: gray;
-    margin: 20px;
+    margin: 15px;
     background-color: white;
 }
 .middleRight{
@@ -34,4 +34,8 @@
 }
 .usage2,.callback2,.validation2,.credit2,.upload2,.scoring2{
     display: none;
+}
+.arrowRight{
+    width: 15px;
+    height: 15px;
 }
