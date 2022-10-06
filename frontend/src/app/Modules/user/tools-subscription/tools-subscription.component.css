@@ -1,0 +1,95 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    /* color: gray; */
+    color: #656971;
+    margin: 15px;
+}
+.middleRight{
+    background-color: #DFE1E8;
+    padding: 10px;
+}
+.divOne{
+    background-color: white;
+    padding: 30px  ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 30px;
+}
+.bottomDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 30px;
+}
+.packages{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.premium,.starter,.pro,.enterprise{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 300px;
+    gap: 10px;
+    align-items: center;
+    /* border: 2px solid grey; */
+    height: 500px;
+    
+}
+.starter{
+    background-color: #1E214E;
+    box-shadow: 2px 2px 2px 2px #1E214E;
+    color: white;
+}
+.premium,.pro,.enterprise{
+color: black;
+box-shadow: 2px 2px 2px 2px lightgray;
+}
+.activateBtn{
+    margin-top: auto;
+    height: 40px;
+    padding: 10px;
+    /* width: 200px; */
+    outline: none;
+    background-color: white;
+    color: #1E214E;
+    border: 1px solid #1E214E;
+}
+.price{
+    margin-top: auto;
+}
+.payments {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.payments img{
+    width: 60px;
+}
+.subscribeBtn{
+    height: 40px;
+    padding: 10px;
+    width: 170px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color:#5ABAEC ;
+ 
+}
+.desc{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.arrow{
+    width: 15px;
+height: 15px;
+}

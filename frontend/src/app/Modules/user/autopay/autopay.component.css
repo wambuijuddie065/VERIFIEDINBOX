@@ -1,0 +1,38 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    color: gray;
+    margin: 15px;
+}
+.middleRight{
+    background-color: #DFE1E8;
+    padding: 10px;
+}
+.divOne{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.divTwo{
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.divTwo button{
+    width: 200px;
+    padding: 10px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    color:white;
+    background-color: #1E214E;
+   
+}

@@ -16,6 +16,14 @@ import { AIScoringDownloadComponent } from './ai-scoring-download/ai-scoring-dow
 import { PayAsYouGoComponent } from './pay-as-you-go/pay-as-you-go.component';
 import { SubscriptionComponent } from './subscription/subscription.component';
 import { AutopayComponent } from './autopay/autopay.component';
+import { InboxPlacementTesterComponent } from './inbox-placement-tester/inbox-placement-tester.component';
+import { EmailServerTesterComponent } from './email-server-tester/email-server-tester.component';
+import { BlacklistMonitoringComponent } from './blacklist-monitoring/blacklist-monitoring.component';
+import { ToolsSubscriptionComponent } from './tools-subscription/tools-subscription.component';
+import { BillingComponent } from './billing/billing.component';
+import { InvoicesComponent } from './invoices/invoices.component';
+import { GDPRInformationComponent } from './gdpr-information/gdpr-information.component';
+import { AccountOptionComponent } from './account-option/account-option.component';
 
 
 @NgModule({
@@ -32,7 +40,15 @@ import { AutopayComponent } from './autopay/autopay.component';
     AIScoringDownloadComponent,
     PayAsYouGoComponent,
     SubscriptionComponent,
-    AutopayComponent
+    AutopayComponent,
+    InboxPlacementTesterComponent,
+    EmailServerTesterComponent,
+    BlacklistMonitoringComponent,
+    ToolsSubscriptionComponent,
+    BillingComponent,
+    InvoicesComponent,
+    GDPRInformationComponent,
+    AccountOptionComponent
   ],
   imports: [
     CommonModule,

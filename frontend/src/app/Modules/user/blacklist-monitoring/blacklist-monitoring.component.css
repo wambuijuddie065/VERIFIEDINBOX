@@ -1,0 +1,75 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    color: gray;
+    margin: 15px;
+}
+.middleRight{
+    background-color: #DFE1E8;
+    padding: 10px;
+}
+.divOne{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.divOne a{
+    text-decoration: none;
+    color: #4ca3ff;
+}
+.activateBtn{
+    background-color: #4ca3ff;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    height: 40px;
+}
+.buttons{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+.upgradeBtn{
+   
+    background-color: #DFE1E8;
+    outline: none;
+    border: none;
+    color: grey;
+    border-radius: 5px;
+    padding: 10px;
+    height: 40px;
+    width: 200px;
+}
+
+.diTwo{
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eaeaeb;
+    padding: 10px 30px;
+    color: lightgray;
+    font-weight: 400;
+    font-size: 18px;
+    
+
+}
+.bottom{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    color: lightgrey;
+   
+}
