@@ -1,0 +1,34 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    margin: 15px;
+    background-color: white;
+}
+.middleRight{
+    background-color: #DFE1E8;
+    padding: 10px;
+}
+.divTwo,.divThree{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.update1,.mail1,.password1,.time1,.notification1,.delete1,.user1,.contact1,.downloads1,.auth1,.assumption1{
+    display:flex;
+    justify-content: space-between;
+    background-color: #F8F8F8;
+    padding: 5px 20px;
+}
+.update2,.mail2,.password2,.time2,.notification2,.delete2,.user2,.contact2,.downloads2,.auth2,.assumption2{
+    background-color:#DFE1E8;
+    padding: 5px 20px;
+}
+.mail2,.password2,.time2,.notification2,.delete2,.user2,.contact2,.downloads2,.auth2,.assumption2{
+    display: none;
+}
+.arrowRight{
+    width: 15px;
+    height: 15px;
+}

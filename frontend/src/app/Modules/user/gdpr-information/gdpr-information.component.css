@@ -1,0 +1,25 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    margin: 15px;
+    background-color: white;
+}
+.middleRight{
+    background-color: #DFE1E8;
+    padding: 10px;
+}
+.accept{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.accept input{
+    height: 50px;
+    width: 50px;
+    /* padding: 5px; */
+}
+.accept p{
+    font-size: 25px;
+}
