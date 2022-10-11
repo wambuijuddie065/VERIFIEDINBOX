@@ -1,32 +1,36 @@
 .mainContainer{
     display: flex;
-}
-.leftDiv{
-    width: 20%;
-    
-    
-}
-.rightDiv{
-    width: 80%;
-    
-}
-.rightDiv,.leftDiv{
-    display: flex;
     flex-direction: column;
+}
 
-} 
+.upperDiv,.lowerDiv{
+    display: flex;
+}
+/* .lowerDiv{
+     min-width: auto; 
+    width: unset;
+} */
+
+
+
 .topLeft{
     
     background-color: #1E214E;
     color: white;
-    
-    
-    
+    width: 20%;  
+  
 
 }
+.topLeft mat-icon{
+    font-size: 30px;
+    width: auto;
+    height: auto;
+}
 .topLeft img{
-    width: 60%;
-    height: 80px;
+    max-width: 80%;
+   left: 0;
+   top: 0;
+   margin-top: 7px;
 }
 .topLeft ,.topRight{
     display: flex;
@@ -34,6 +38,7 @@
     height: 40px;
     padding: 20px;
     align-items: center;
+   
 
 
 }
@@ -41,12 +46,13 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 0px;
+    padding: 20px 12px;
+    min-width:20% ;
+    /* display: none; */
+    
    
 }
-/* mat-icon {
-    vertical-align: sub;
-} */
+
 .titleHeader{
     display: flex;
     justify-content: flex-start;
@@ -79,8 +85,7 @@ padding: 10px;
     gap: 10px;
     font-size: 13px;
     text-decoration: none;
-    /* margin-left: 30px; */
-    /* text-align: center; */
+   
 }
 .divScoring .details  a, .divCredit .details a , .divTools .details a ,
 .divAccount .details a {
@@ -92,6 +97,7 @@ padding: 10px;
 .topRight{
     display: flex;
     justify-content: space-between;
+    width: 80%;
 }
 .topRight .searchDiv input{
     background-color:#F3F3F3;
@@ -103,34 +109,28 @@ padding: 10px;
 }
 .profileDetails{
     display: flex;
-    gap: 5px;
+    gap: 15px;
     justify-content: space-between;
     align-items: center;
     
 }
 
-.emailIcon,.notificationIcon{
-    color: #ABABAA;
-    font-size: 20px;
+.emailIcon,.logoutIcon{
+    width: 20px;
+}
+.notificationIcon{
+    width: 15px;
 }
 .helpIcon{
     color: #ABABAA;
 font-size: 15px;
 margin-top: 10px;
 }
-.circleIcon{
-    color: #1E214E;
-    font-size: 40px;
-    text-align: center;
-    padding:5px 20px 5px 5px;
-    display: flex;
-    align-items: center;
+
+.avatarIcon{
+    width: 30px;
 }
-.logoutIcon{
-    color: #1E214E;
-    font-size: 20px;
-    font-weight: 700;
-}
+
 .profileDetails p{
     
     margin-top: 10px;
@@ -141,8 +141,12 @@ margin-top: 10px;
 
 .bottomRight{
     background-color: #F3F6F9;
-    /* padding: 0 25px; */
-    height:100%;
+   width: 80%; 
+    max-width: auto; 
+    height:auto;
+    position: relative;
+   
+   
 }
 
 .contact{
@@ -176,14 +180,19 @@ margin-top: 10px;
     display: flex;
     gap: 30px;
     background-color: white;
+    box-shadow: 1px 1px 1px 1px;
     padding: 10px 30px;
     color: #1E214E;
     width: fit-content;
     border-radius: 100px;
     align-items: center;
-   margin-left: auto;
-   margin-right: 25px;
-
+   position: absolute;
+   position: fixed;
+   /* right: 40px; */
+   right: 30%;
+   top: 90%;
+   z-index: 999;
+  
  
 }
 .chatDiv img{
@@ -195,6 +204,28 @@ margin-top: 10px;
 }
 .active{
     background-color: #F3F3F3;
-    color: gray;
+    color: gray !important;
     border-left:solid 3px #1E214E ;
+ 
 }
+.copyrightDiv{
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    right: 40%;
+    /* background-color: white; */
+  
+  
+    
+}
+.copyrightDiv p{
+   
+    text-align: center;
+    color: #ABABAA;
+    
+}
+/* .routerOutlet{
+    
+   
+} */

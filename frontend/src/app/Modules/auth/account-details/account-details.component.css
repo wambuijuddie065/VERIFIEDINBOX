@@ -1,12 +1,9 @@
-.mainDiv{
-    background-color: #FAFAFA;
-   
-    
-}
+
 .content{
     margin: 30px auto;
     display: flex;
     width: 80%;
+    box-shadow: 0 0  5px 0 ;
    
 }
 .leftDiv{

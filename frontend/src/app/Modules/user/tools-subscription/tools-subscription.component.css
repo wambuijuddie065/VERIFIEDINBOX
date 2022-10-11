@@ -3,9 +3,8 @@
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    /* color: gray; */
     color: #656971;
-    margin: 15px;
+    /* margin: 10px; */
 }
 .middleRight{
     background-color: #DFE1E8;
@@ -24,7 +23,7 @@
     flex-direction: column;
     gap: 20px;
     background-color: white;
-    padding: 30px;
+    padding: 20px;
 }
 .packages{
     display: flex;
@@ -36,11 +35,12 @@
     flex-direction: column;
     padding: 20px;
     width: 300px;
-    gap: 10px;
     align-items: center;
-    /* border: 2px solid grey; */
-    height: 500px;
+    height: 450px;
     
+}
+.iconV{
+    width: 60%;
 }
 .starter{
     background-color: #1E214E;
@@ -90,6 +90,7 @@ box-shadow: 2px 2px 2px 2px lightgray;
     align-items: center;
 }
 .arrow{
-    width: 15px;
-height: 15px;
+    width: 12px;
+    height: 15px;
+    margin-bottom: auto;
 }

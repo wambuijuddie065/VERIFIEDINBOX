@@ -23,7 +23,8 @@
         <div class="upload">
             <div class="attachment">
                 <div class="attachmentIcon">
-                    <mat-icon fontSet="material-icons-outlined"> insert_drive_file</mat-icon>
+                    <!-- <mat-icon fontSet="material-icons-outlined"> insert_drive_file</mat-icon> -->
+                    <img src="../../../../assets/file.png" alt="">
                 </div>
                 
                 <p>Hikoot_Clien_Pitch_V2.pdf</p>
@@ -34,10 +35,9 @@
                 <button style="color: gray;">Remove</button>
             </div>
             <div class="addFiles">
-                <input type="file" class="fileInput"  
-              (change)="onChange($event)" #fileUpload>
+                <input type="file" class="fileInput">
                 
-                <button (click)=" onUpload()">+ Add files</button>
+                <button>+ Add files</button>
             </div>
             
             
@@ -47,7 +47,8 @@
     </div>
     <div class="divFour">
         <div>
-            <mat-icon fontSet="material-icons-outlined" >cloud_upload</mat-icon>
+            <!-- <mat-icon fontSet="material-icons-outlined" >cloud_upload</mat-icon> -->
+            <img src="../../../../assets/dropfile.png" alt="">
         </div>
         
         <div><p>You can also drop your file here</p></div>

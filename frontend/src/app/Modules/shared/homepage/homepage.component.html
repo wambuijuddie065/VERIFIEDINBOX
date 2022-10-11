@@ -12,11 +12,11 @@
         </div>
         <div class="navLinks">
             <ul class="navList">
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT US</a></li>
-                <li><a href="">PRODUCTS</a></li> 
-                <li><a href="">PRICING</a></li>
-                <li><a href="">CONTACT US</a></li>
+                <li><a href="/home" >HOME</a></li>
+                <li><a href="/home#about" >ABOUT US</a></li>
+                <li><a href="/home#products" >PRODUCTS</a></li> 
+                <li><a href="/home#pricing" >PRICING</a></li>
+                <li><a href="/home#contact" >CONTACT US</a></li>
                 <li><button routerLink="/auth/login" >LOGIN</button></li>
             </ul>
             
@@ -25,14 +25,14 @@
     <div class="divThree">
         <img src="../../../../assets/Hero Header.png" alt="">
     </div>
-    <div class="divFour">
+    <div class="divFour" id="about">
         <div class="leftFour">
             <img src="../../../../assets/about-us.png" alt="">
         </div>
-        <div class="rightFour">
+        <div class="rightFour" >
             
             <p class="about">ABOUT US</p>
-            <!-- <img src="../../../../assets//Line.png" alt=""> -->
+            <img class="line" src="../../../../assets/Line.png" alt="">
             <p>Your Partner In Email List Cleaning Services
                 Getting <br> Rid Of All The Bad Guys 
             </p>
@@ -44,9 +44,14 @@
         </div>
 
     </div>
-    <div class="divFive">
+    <div class="divFive" id="products">
         
-        <p class="products">OUR PRODUCTS</p>
+        
+        <div class="productsTop">
+            <p class="products">OUR PRODUCTS</p>
+   
+        <img class="line" src="../../../../assets/Line.png" alt="">
+    </div>
         <div class="productGrids">
             <div class="a">
                 <img class="productIcon1" src="../../../../assets/email-formatter.png" alt="">
@@ -115,11 +120,18 @@
         </div>
     </div>
     <div class="divSix">
-        <p>Verified Inbox offers you the opportunity to check emails</p>
-        <p>INDIVIDUALLY, BULK or using API</p>
+        <p>Verified Inbox offers you the opportunity to check emails <br>
+            INDIVIDUALLY, BULK or using API</p>
+            <img class="line2" src="../../../../assets/white-line.png" alt="">
+            
+        
     </div>
-    <div class="divSeven">
-        <p class="pricingTitle">PRICING</p> 
+    <div class="divSeven" id="pricing">
+        <div class="pricingTop">
+            <p class="pricingTitle">PRICING</p> 
+            <img class="lineP" src="../../../../assets/Line.png" alt="">
+        </div>
+
         <div class="pTag">
             <img src="../../../../assets/price-tag 2.png" alt="">
         </div>
@@ -131,15 +143,15 @@
         <div class="pricingInputs">
             <div class="pricingInputOne">
                 <label for="noOfEmail">NUMBER OF EMAIL</label>
-                <input type="number">
+                <input type="number" placeholder="1">
             </div>
             <div class="pricingInputTwo">
                 <label for="amount">AMOUNT</label>
-                <input type="text">
+                <input type="text" placeholder="$0.03">
             </div>
         </div>
     </div>
-    <div class="divEight">
+    <div class="divEight" id="contact">
         <div class="contactUs">
             <p>Contact Us</p>
             <form class="contactForm" >
@@ -164,11 +176,11 @@
         </div>
         <div class="navLinks">
             <ul class="navList">
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT US</a></li>
-                <li><a href="">PRODUCTS</a></li> 
-                <li><a href="">PRICING</a></li>
-                <li><a href="">CONTACT US</a></li>
+                <li><a href="/home">HOME</a></li>
+                <li><a href="/home#about">ABOUT US</a></li>
+                <li><a href="/home#products">PRODUCTS</a></li> 
+                <li><a href="/home#pricing">PRICING</a></li>
+                <li><a href="/home#contact">CONTACT US</a></li>
                 <li><a href="" [routerLink]="'/auth/login'" >LOGIN</a></li>
                 
             </ul>
