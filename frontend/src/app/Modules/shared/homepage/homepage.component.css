@@ -11,14 +11,23 @@
     display: flex;
     padding: 20px 50px;
     justify-content: space-between;
+    align-items: center;
 }
 .logoIcon{
     height: 50px;
+}
+.navLinks{
+    display: flex;
+    gap: 20px;
+}
+.navLinks mat-icon{
+    display: none;
 }
 .navList{
     display: flex;
     gap: 15px;
     align-items: center;
+    position:sticky;
 
 }
 .navList li{
@@ -63,8 +72,6 @@
 }
 .leftFour img{
 
-    /* width: auto; */
-    /* height: 200px; */
     width: 100%;
 
 }
@@ -115,7 +122,7 @@ i{
     "d e f";
     justify-content: center;
     column-gap: 40px;
-    row-gap: 80px;
+    row-gap: 50px;
     justify-content: center;
     align-items: center;
 }
@@ -126,6 +133,7 @@ i{
     gap: 30px;
     align-items: center;
     padding: 30px;
+    /* width: auto; */
    
    
 }
@@ -178,11 +186,12 @@ i{
 
 .pTag{
     background-color: #1C1F4C;
-    padding: 30px;
-    border-radius: 250px;
+    padding: 30px 35px;
+    border-radius: 50%;
 }
 .pTag img{
-    height: 70px;
+    height: 50px;
+  
 }
 .pricingTitle{
     font-size: 40px;
@@ -281,6 +290,7 @@ i{
     display: flex;
     padding: 50px;
     justify-content: space-between;
+    align-items: center;
 }
 .divTen{
     color: white;
@@ -288,4 +298,242 @@ i{
     text-align: center;
     font-size: 13px;
     padding: 10px;
+}
+
+@media screen and (max-width:1436px) {
+    .productGrids{
+        column-gap: 0px;
+    row-gap: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+   
+    }
+    .a,.b,.c,.d,.e,.f{
+        width: 350px;
+        gap: 20px;
+    }
+    .divNine{
+        padding:25px;
+        align-items: center;
+    }
+   
+    
+}
+@media screen and (max-width:1190px){
+    .pricingDesc{
+font-size: 20px;
+    }
+    .divThree{
+        height: 500px;
+    }
+}
+@media screen and (max-width:1062px){
+    .rightFour{
+        line-height: normal;
+        gap: 10px;
+
+    }
+    .divFive{
+        padding: 50px;
+    }
+    .about,.products,.pricingTitle{
+        font-size: 25px;
+    }
+
+.contactForm{
+    
+    padding: 40px 0px;
+}
+
+
+.divFive{
+    gap: 40px;
+}
+}
+@media screen and (max-width:926px) {
+    .navLinks mat-icon{
+        display: block;
+        font-size: 30px;
+    }
+    .navList{
+        display: none;
+    }
+    .contactForm input{
+    
+        width: 300px;
+    }
+    .divFive{
+        gap: 30px;
+    }
+    .divNine{
+        padding:20px;}
+}
+
+@media screen and (max-width:922px){
+    .a,.b,.c,.d,.e,.f{
+        width: 100%;
+        
+    }
+    .divThree{
+        height: 450px;
+    }
+    .divFive{
+        gap: 20px;
+    }
+    .leftFour img{
+        
+        width: 100%;
+     
+    }
+    .leftFour{
+        width:auto;
+    }
+    .rightFour
+    {
+        width: auto;
+        line-height: 25px;
+       
+        
+        
+    }
+    .aboutTop{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+
+    }
+    
+   
+    .rightFour br{
+        display: none;
+    }
+    .divFour{
+
+        padding: 50px ;
+        width: auto;
+        gap: 40px;
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width:834px){
+    .pricingDesc br{
+        display: none;
+        
+    }
+    .pricingDesc{
+        font-size: 18px;
+
+    }
+    .divSeven{
+        padding: 70px 30px;
+    }
+    .pricingInputOne input, .pricingInputTwo input{
+        width: 300px;
+        height: 20px;
+    }
+    .pricingInputs{
+        gap: 25px;
+    }
+    .divEight{
+        flex-direction: column;
+       
+    }
+    .contactUs{
+        width: auto;
+    }
+    .locationMap{
+        width: auto;
+        
+    }
+    .divNine{
+        padding:14px;}
+        .divThree{
+            height: 430px;
+        }
+}
+@media screen and (max-width:734px) {
+    .pricingDesc{
+        font-size: 18px;
+        text-align: center;
+        line-height: 25px;
+
+    }
+    .divThree{
+        height: 420px;
+    }
+    
+}
+@media screen and (max-width:700px){
+    .pricingInputs{
+        flex-direction: column;
+        align-items: center;
+    }
+    .divNine{
+        padding:10px;}
+        .divThree{
+            height: 380px;
+        }
+        .messageInput{
+            height: 100px;
+        }
+        .divThree{
+            height: 400px;
+        }
+
+}
+@media screen and (max-width:500px){
+    .divThree{
+        height: 300px;
+    }
+    .divTwo{
+
+        padding: 20px}
+        .logoIcon{
+            height: 30px;
+        }
+        .divOne{
+            justify-content: center;
+            gap: 10px;
+            padding: 15px;
+        }
+        .divSix{
+            font-size: 16px;
+            height: 350px;
+
+        }
+        .productTitle{
+            font-size: 18px;
+        }
+        .productDesc{
+            font-size: 15px;
+        }
+        .pricingDesc{
+            font-size: 16px;
+        }
+        .divThree{
+            height: 380px;
+        }
+
+}
+@media screen and (max-width:434px){
+    .divFive{
+        padding: 20px;
+      
+    }
+    .a,.b,.c,.d,.e,.f{
+        padding: 10px ;
+        width: auto;
+    }
+    .productGrids{
+        gap: 30px;
+    }
+    .messageInput{
+        height: 80px;
+    }
+    .divThree{
+        height: 300px;
+    }
+
 }
