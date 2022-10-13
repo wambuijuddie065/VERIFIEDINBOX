@@ -23,6 +23,7 @@ import { BillingComponent } from './billing/billing.component';
 import { InvoicesComponent } from './invoices/invoices.component';
 import { GDPRInformationComponent } from './gdpr-information/gdpr-information.component';
 import { AccountOptionComponent } from './account-option/account-option.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -51,7 +52,9 @@ import { AccountOptionComponent } from './account-option/account-option.componen
   imports: [
     CommonModule,
     UserRoutingModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class UserModule { }

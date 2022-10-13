@@ -72,6 +72,7 @@ box-shadow: 2px 2px 2px 2px lightgray;
 }
 .payments img{
     width: 60px;
+    cursor: pointer;
 }
 .subscribeBtn{
     height: 40px;

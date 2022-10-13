@@ -7,6 +7,13 @@
     margin: 15px;
     background-color: white;
 }
+.mainContainer img{
+    cursor: pointer;
+}
+.mainContainer a{
+    color: #4ca3ff;
+    text-decoration: none;
+}
 .middleRight{
     background-color: #DFE1E8;
     padding: 10px;
@@ -28,14 +35,15 @@
     justify-content: space-between;
     background-color: #F8F8F8;
     padding: 5px 20px;
+    align-items: center;
 }
 .keys2,.usage2,.callback2,.validation2,.credit2,.upload2,.scoring2{
     background-color:#DFE1E8;
     padding: 5px 20px;
 }
-.usage2,.callback2,.validation2,.credit2,.upload2,.scoring2{
+/* .usage2,.callback2,.validation2,.credit2,.upload2,.scoring2{
     display: none;
-}
+} */
 .arrowRight{
     width: 15px;
     height: 15px;

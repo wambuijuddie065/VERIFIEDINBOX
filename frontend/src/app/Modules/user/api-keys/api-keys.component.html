@@ -9,9 +9,10 @@
     <div class="divTwo">
         <div class="keys1">
             <p>Your API Keys</p>
-            <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="">
+            <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isKeysOpen" (click)="untoggleKeys()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleKeys()" *ngIf="!isKeysOpen">
         </div>
-        <div class="keys2">
+        <div class="keys2" *ngIf="isKeysOpen">
             <p>Your API Key is required to use our API. Keep it safe and secure. 
                 You can view and change it anytime. <a href="">Click here</a> to get started.
             </p>
@@ -19,16 +20,18 @@
         </div>
         <div class="usage1">
             <p>API usage dashboard</p>
-            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="">
+                       <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isUsageOpen" (click)="untoggleUsage()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleUsage()" *ngIf="!isUsageOpen">
         </div>
-        <div class="usage2">
+        <div class="usage2" *ngIf="isUsageOpen">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
         </div>
         <div class="callback1">
             <p>API callback status-File management API</p>
-            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="">
+                       <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isCallbackOpen" (click)="untoggleCallback()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleCallback()" *ngIf="!isCallbackOpen">
         </div>
-        <div class="callback2">
+        <div class="callback2" *ngIf="isCallbackOpen">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
         </div>
 
@@ -36,32 +39,36 @@
     <div class="divThree">
         <div class="validation1">
             <p>API-Email validation document</p>
-            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="">
+                       <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isValidationOpen" (click)="untoggleValidation()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleValidation()" *ngIf="!isValidationOpen">
         </div>
-        <div class="validation2">
+        <div class="validation2" *ngIf="isValidationOpen">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
         </div>
         <div class="credit1">
             <p>API-Get credit documentations</p>
-            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="">
+                       <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isCreditOpen" (click)="untoggleCredit()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleCredit()" *ngIf="!isCreditOpen">
         </div>
-        <div class="credit2">
+        <div class="credit2" *ngIf="isCreditOpen">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
         </div>
     </div>
     <div class="divFour">
         <div class="upload1">
             <p>API-File management documentation - email validation - bulk upload</p>
-            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="">
+                       <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isUploadOpen" (click)="untoggleUpload()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleUpload()" *ngIf="!isUploadOpen">
         </div>
-        <div class="upload2">
+        <div class="upload2" *ngIf="isUploadOpen">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
         </div>
         <div class="scoring1">
             <p>API-File management documentation - email validation - I email scoring bulk uploads</p>
-            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="">
+                       <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isScoringOpen" (click)="untoggleScoring()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleScoring()" *ngIf="!isScoringOpen">
         </div>
-        <div class="scoring2">
+        <div class="scoring2" *ngIf="isScoringOpen">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
         </div>
 

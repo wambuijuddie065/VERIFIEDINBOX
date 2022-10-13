@@ -30,10 +30,16 @@
 
     </p>
     <p>The Data Controller and the Data Processor</p>
-    <div class="accept">
-        <input type="checkbox" name="" id="">
+   
+        <form (ngSubmit)="onAccept()" [formGroup]="acceptForm" class="acceptForm">
+            <div class="accept">
+                <input type="checkbox" formControlName="acceptTerms">
         <p>I HAVE READ AND ACCEPTED THE DATA PROCESSING AGREEMENT</p>
-    </div>
+            </div>
+            <button type="submit" class="acceptBtn" [disabled]="acceptForm.invalid">ACCEPT</button>
+        </form>
+        
+    
 
   <!-- <div class="divOne"></div> -->
 </div>

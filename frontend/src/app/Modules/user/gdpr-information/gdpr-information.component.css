@@ -16,10 +16,31 @@
     align-items: center;
 }
 .accept input{
-    height: 50px;
-    width: 50px;
-    /* padding: 5px; */
+    height: 35px;
+    width: 40px;
+    
 }
 .accept p{
-    font-size: 25px;
+    font-size: 20px;
+    
 }
+.acceptForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.acceptBtn{
+    background-color: #23264F;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    height: 40px;
+    padding: 10px;
+    width: 200px;
+}
+ button[disabled]{
+    background-color: #575978;
+
+ }

@@ -6,60 +6,68 @@
     <div class="divTwo">
         <div class="update1">
             <p>Update your profile</p>
-            <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="">
+            <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isUpdateOpen" (click)="untoggleUpdate()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleUpdate()" *ngIf="!isUpdateOpen">
         </div>
-        <div class="update2">
+        <div class="update2" *ngIf="isUpdateOpen">
             <p>Keeping your profile current helps us better serve your needs. <a href="">Click here</a> to update your profile.
             </p>
 
         </div>
         <div class="mail1">
             <p>Change your mail.</p>
-            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="">
+            <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isMailOpen" (click)="untoggleMail()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleMail()" *ngIf="!isMailOpen">
         </div>
-        <div class="mail2">
+        <div class="mail2" *ngIf="isMailOpen">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
         </div>
         <div class="password1">
             <p>Change your password.</p>
-            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="">
+            <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isPasswordOpen" (click)="untogglePassword()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="togglePassword()" *ngIf="!isPasswordOpen">
         </div>
-        <div class="password2">
+        <div class="password2" *ngIf="isPasswordOpen">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
         </div>
         <div class="notification1">
             <p>Change your notification settings.</p>
-            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="">
+            <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isNotificationOpen" (click)="untoggleNotification()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleNotification()" *ngIf="!isNotificationOpen">
         </div>
-        <div class="notification2">
+        <div class="notification2" *ngIf="isNotificationOpen">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
         </div>
         <div class="time1">
             <p>Change your time zone settings</p>
-            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="">
+            <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isTimeOpen" (click)="untoggleTime()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleTime()" *ngIf="!isTimeOpen">
         </div>
-        <div class="time2">
+        <div class="time2" *ngIf="isTimeOpen">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
         </div>
         <div class="delete1">
             <p>Delete your account.</p>
-            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="">
+            <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isDeleteOpen" (click)="untoggleDelete()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleDelete()" *ngIf="!isDeleteOpen">
         </div>
-        <div class="delete2">
+        <div class="delete2" *ngIf="isDeleteOpen">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
         </div>
         <div class="user1">
             <p>Manage user.</p>
-            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="">
+            <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isUserOpen" (click)="untoggleUser()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleUser()" *ngIf="!isUserOpen">
         </div>
-        <div class="user2">
+        <div class="user2" *ngIf="isUserOpen">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
         </div>
         <div class="contact1">
             <p>Manage contact list.</p>
-            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="">
+            <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isContactOpen" (click)="untoggleContact()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleContact()" *ngIf="!isContactOpen">
         </div>
-        <div class="contact2">
+        <div class="contact2" *ngIf="isContactOpen">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
         </div>
 
@@ -67,23 +75,26 @@
     <div class="divThree">
         <div class="downloads1">
             <p>Password protected downloads</p>
-            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="">
+            <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isDownloadOpen" (click)="untoggleDownload()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleDownload()" *ngIf="!isDownloadOpen">
         </div>
-        <div class="downloads2">
+        <div class="downloads2" *ngIf="isDownloadOpen">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
         </div>
         <div class="auth1">
             <p>Two factor authentication</p>
-            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="">
+            <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isAuthOpen" (click)="untoggleAuth()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleAuth()" *ngIf="!isAuthOpen">
         </div>
-        <div class="auth2">
+        <div class="auth2" *ngIf="isAuthOpen">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
         </div>
         <div class="assumption1">
             <p>Account assumption</p>
-            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="">
+            <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isAssumptionOpen" (click)="untoggleAssumption()">
+            <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleAssumption()" *ngIf="!isAssumptionOpen">
         </div>
-        <div class="assumption2">
+        <div class="assumption2" *ngIf="isAssumptionOpen">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
         </div>
     </div>

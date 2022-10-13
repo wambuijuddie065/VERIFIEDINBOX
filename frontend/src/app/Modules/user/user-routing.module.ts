@@ -30,7 +30,7 @@ const routes: Routes = [
         component: DashboardComponent,
         children: [
           { path: 'welcome', component: WelcomeComponent },
-          { path: 'upload-profile', component: UploadProfileComponent },
+          { path: 'upload-file', component: UploadProfileComponent },
           { path: 'download-results', component: DownloadResultsComponent },
           {
             path: 'single-email-validator',

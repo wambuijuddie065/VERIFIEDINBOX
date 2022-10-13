@@ -10,25 +10,34 @@
     <p>If you have a VAT/EIN Number or a business name please enter it below, so we can add it to your invoices.</p>
   </div>
   <div class="secondDiv">
-    <div class="divTwo">
+   
+    <form class="divTwo" [formGroup]="invoiceForm" (ngSubmit)="onSave()">
+      <div style="display: flex;gap:110px;">
+        <small *ngIf="f['vat'].touched && f['vat'].errors && f['vat'].errors['required'] ">*VAT/EIN is required</small>
+        <small *ngIf="f['bill'].touched && f['bill'].errors && f['bill'].errors['required'] ">*Bill information is required</small>
+      </div>
+
     
         <div class="inputs">
-            <div class="inputOne">
+            <div class="inputOne">              
                 <label for="">VAT/EIN</label>
-          <input type="text" placeholder="#VAT/EIN" />
+          <input formControlName="vat" type="text" placeholder="#VAT/EIN" />
+          
             </div>
             
           <div class="inputTwo">
             <label for="">BILL TO</label>
-            <input type="text" placeholder="Enter your bill information">
+            <input formControlName="bill" type="text" placeholder="Enter your bill information">
+
           </div>
 
           
-          <button style="margin-top:auto;">Save</button>
+          <button type="submit" style="margin-top:auto;">Save</button>
         </div>
     
         
-      </div>
+      
+    </form>
       <div>
         <div class="top">
           <p>INVOICE</p>

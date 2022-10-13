@@ -8,6 +8,13 @@
     
     
 }
+.mainContainer img{
+    cursor: pointer;
+}
+.mainContainer a{
+    color: #4ca3ff;
+    text-decoration: none;
+}
 .middleRight{
     background-color: #DFE1E8;
     padding: 10px;
@@ -22,14 +29,15 @@
     justify-content: space-between;
     background-color: #F8F8F8;
     padding: 5px 20px;
+    align-items: center;
 }
 .update2,.mail2,.password2,.time2,.notification2,.delete2,.user2,.contact2,.downloads2,.auth2,.assumption2{
     background-color:#DFE1E8;
     padding: 5px 20px;
 }
-.mail2,.password2,.time2,.notification2,.delete2,.user2,.contact2,.downloads2,.auth2,.assumption2{
+/* .mail2,.password2,.time2,.notification2,.delete2,.user2,.contact2,.downloads2,.auth2,.assumption2{
     display: none;
-}
+} */
 .arrowRight{
     width: 15px;
     height: 15px;

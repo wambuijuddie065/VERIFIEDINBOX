@@ -42,6 +42,9 @@ label{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    
+    
+    
 }
 .inputs input,select{
     padding: 10px;
@@ -49,6 +52,7 @@ label{
     background-color: white;
     border-radius:5px;
     border: solid 1px lightgrey;
+    
 }
 .inputs select{
     width: 200px;
@@ -85,3 +89,11 @@ label{
     color: lightgrey;
    
 }
+small{
+    color: red;
+    font-size: 10px;
+   
+}
+ input.ng-invalid.ng-touched{
+    border: solid 1px red;
+ }
