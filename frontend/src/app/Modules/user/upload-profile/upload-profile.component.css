@@ -52,13 +52,12 @@
     gap: 20px;
 }
 .upload{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.fileInput {  
-    display: none;  
-  }  
+
 .attachment{
     display: flex;
     gap: 40px;
@@ -79,7 +78,11 @@
     background-color:#F3F6F9;
    
 }
-.addFiles button{
+/* .addFiles{
+    
+} */
+.addFiles .addFileBtn{
+    
     background-color:#6A95F6 ;
     color: white;
     padding: 10px;
@@ -88,6 +91,39 @@
     outline: none;
     border: none;
     border-radius: 5px;
+}
+.uploadDiv{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 2px 1px;
+    border-radius: 10px;
+    position: absolute;
+    left: 40%;
+    min-height:100px ;
+    padding: 20px;
+}
+.btns{
+    display: flex;
+    gap: 30px;
+}
+
+.uploadDiv button{
+   padding: 10px;
+   outline: none;
+   border: none;
+   border-radius: 5px;
+   width: 100px;
+}
+.uploadDiv  .closeBtn{
+    color:gray;
+}
+.uploadDiv .uploadFileBtn{
+    background-color: #6A95F6;
+   color: white;
+    
 }
 .divFour{
     color: #6A95F6;

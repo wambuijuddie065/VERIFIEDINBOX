@@ -23,7 +23,6 @@
         <div class="upload">
             <div class="attachment">
                 <div class="attachmentIcon">
-                    <!-- <mat-icon fontSet="material-icons-outlined"> insert_drive_file</mat-icon> -->
                     <img src="../../../../assets/file.png" alt="">
                 </div>
                 
@@ -35,9 +34,17 @@
                 <button style="color: gray;">Remove</button>
             </div>
             <div class="addFiles">
-                <input type="file" class="fileInput">
                 
-                <button>+ Add files</button>
+                
+                <button *ngIf="!uploadDivOpen" class="addFileBtn" (click)="onDisplayDiv()">+ Add files</button>
+            </div>
+            <div class="uploadDiv" *ngIf="uploadDivOpen">
+                <input type="file" placeholder="choose file" class="fileInput" accept=".csv,.txt,.xls,.xlsx" (change)="onChange($event)">
+                <div class="btns">
+                    <button (click)="onCloseDiv()" class="closeBtn">CANCEL</button>
+                    <button class="uploadFileBtn">UPLOAD</button>
+                </div>
+               
             </div>
             
             
