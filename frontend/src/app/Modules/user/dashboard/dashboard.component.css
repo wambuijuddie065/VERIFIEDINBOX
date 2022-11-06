@@ -222,7 +222,10 @@ margin-top: 10px;
     color: #ABABAA;
     
 }
-/* .routerOutlet{
+.toggle{
+    width: 100%;
     
-   
-} */
+}
+.transition{
+    transition: left 3sec;
+}

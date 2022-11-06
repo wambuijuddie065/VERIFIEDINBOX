@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class FileUploadService {
-  baseUrl="/uploads"
+  baseUrl="https://file.io"
 
   constructor(private http:HttpClient) { }
   upload(file:any):Observable<any>{

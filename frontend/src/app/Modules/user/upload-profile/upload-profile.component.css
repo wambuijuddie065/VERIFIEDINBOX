@@ -125,6 +125,16 @@
    color: white;
     
 }
+.filesArray{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.singleFile{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
 .divFour{
     color: #6A95F6;
     display: flex;

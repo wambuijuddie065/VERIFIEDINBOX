@@ -3,7 +3,7 @@
     <div class="topLeft">
         
         <img src="../../../../assets/logo-white.png" alt="">
-        <mat-icon>menu</mat-icon>
+        <mat-icon (click)="toggleMenu()">menu</mat-icon>
        
     </div>
     <div class="topRight">
@@ -13,16 +13,16 @@
         </div>
         
         <div class="profileDetails">
-            <!-- <mat-icon class="emailIcon" >markunread</mat-icon> -->
+         
             <img class="emailIcon" src="../../../../assets/email.png" alt="">
-            <!-- <mat-icon class="notificationIcon">notifications</mat-icon> -->
+       
             <img class="notificationIcon" src="../../../../assets/notification.png" alt="">
 
-            <!-- <mat-icon class="circleIcon">circle_outline</mat-icon> -->
+            
             <img class="avatarIcon" src="../../../../assets/av.png" alt="">
             <p>Bernard Odote</p>
             <mat-icon class="helpIcon">help_outline</mat-icon>
-            <!-- <mat-icon class="logoutIcon" routerLink="/home">power_settings_new</mat-icon> -->
+           
             <img class="logoutIcon" routerLink="/home" src="../../../../assets/logout.png" alt="">
 
          
@@ -30,8 +30,8 @@
     </div>
    
 </div>
-<div class="lowerDiv">
-    <div class="bottomLeft">
+<div class="lowerDiv" >
+    <div class="bottomLeft" *ngIf=" !menuVisible" >
         <div class="divValidator">
             <div class="titleHeader">
                 <img src="../../../../assets/email-validator.png" alt="">
@@ -96,11 +96,11 @@
                 <a href="" routerLink="/user/dashboard/account-option" routerLinkActive="active">Account option</a>
             </div>
         </div>
-        <!-- <div class="divBlank"></div> -->
+        
     </div>
   
     
-    <div class="bottomRight">
+    <div class="bottomRight" [ngClass]="{'toggle':menuVisible}" >
         <div class="routerOutlet">
             <router-outlet></router-outlet>
         </div>

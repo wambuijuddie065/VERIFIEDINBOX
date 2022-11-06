@@ -21,31 +21,54 @@
         <p>Upload attachment...</p>
 
         <div class="upload">
-            <div class="attachment">
+            <div *ngIf="filesArr.length else noFiles" class="filesArray">
+                <div  *ngFor="let file of filesArr" class="singleFile">
+                    <div class="attachment">
+                        <div class="attachmentIcon">
+                            <img src="../../../../assets/file.png" alt="">
+                        </div>
+                        
+                        <p>{{file}}</p>
+                    </div>
+                    <div class="actions">
+                        <!-- <button style="color: #6A95F6;">+ Add note</button> -->
+                        <button style="color: gray;">Edit</button>
+                        <button style="color: gray;" (click)="onRemove(file.index)">Remove</button>
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+            
+            <ng-template #noFiles>
+                <div class="attachment" >
                 <div class="attachmentIcon">
                     <img src="../../../../assets/file.png" alt="">
                 </div>
                 
                 <p>Hikoot_Clien_Pitch_V2.pdf</p>
             </div>
-            <div class="actions">
-                <button style="color: #6A95F6;">+ Add note</button>
-                <button style="color: gray;">Edit</button>
-                <button style="color: gray;">Remove</button>
-            </div>
+                <div class="actions">
+                    <!-- <button style="color: #6A95F6;">+ Add note</button> -->
+                    <button style="color: gray;">Edit</button>
+                    <button style="color: gray;">Remove</button>
+                </div>
+            </ng-template >
+            
             <div class="addFiles">
                 
                 
                 <button *ngIf="!uploadDivOpen" class="addFileBtn" (click)="onDisplayDiv()">+ Add files</button>
             </div>
-            <div class="uploadDiv" *ngIf="uploadDivOpen">
-                <input type="file" placeholder="choose file" class="fileInput" accept=".csv,.txt,.xls,.xlsx" (change)="onChange($event)">
+            <form class="uploadDiv" *ngIf="uploadDivOpen">
+                <input type="file" placeholder="choose file" class="fileInput" #fileInput accept=".csv,.txt,.xls,.xlsx" (change)="onChange($event)">
                 <div class="btns">
                     <button (click)="onCloseDiv()" class="closeBtn">CANCEL</button>
-                    <button class="uploadFileBtn">UPLOAD</button>
+                    <button class="uploadFileBtn" (click)="onUpload()">UPLOAD</button>
                 </div>
                
-            </div>
+            </form>
             
             
 

@@ -1,8 +1,8 @@
 import { HttpClient, HttpEventType } from '@angular/common/http';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 
 import { Router } from '@angular/router';
-import { finalize, Subscription } from 'rxjs';
+
 import { FileUploadService } from 'src/app/Services/file-upload.service';
 
 @Component({
@@ -12,12 +12,19 @@ import { FileUploadService } from 'src/app/Services/file-upload.service';
 })
 export class UploadProfileComponent implements OnInit {
 
-  @Input()  
+  @ViewChild('fileInput',{static:false})
+  fileInput!:ElementRef 
    
-    fileName = '';  
+    fileName:any;  
+    files:any
     uploadDivOpen:boolean=false
+    filesArr!:Array<any>
+    
  
-  constructor(private router:Router,private http: HttpClient){ }
+  constructor(private router:Router,private http: HttpClient){
+    this.filesArr=[]
+    
+   }
   ngOnInit(): void {
   
     
@@ -29,11 +36,39 @@ export class UploadProfileComponent implements OnInit {
   onCloseDiv(){
     this.uploadDivOpen=false
   }
-  onChange(event:Event){
-    // const file:File = event.target.files[0];
+  onChange(event:any){
+    
+    if (event.target.files.length>0) {
+      const file:File = event.target.files[0];
+      console.log(file);
+      this.fileName=file
+      
+      
+      
+    }
+ 
 
   }
-  
+  onUpload(){
+    const formData=new FormData()
+    formData.append('file',this.fileName)
+    this.http.post<any>("http://localhost:3000/file",formData).subscribe((res)=>{
+      console.log(res);
+      this.fileInput.nativeElement.value=""
+      this.filesArr.push(res.path)
+      
+    },err=>{console.log(err);
+    })
+      
+  }
+  getOneFile(id:number){
+    return this.filesArr.find((f:any)=>f.index==id)
+
+  }
+  onRemove(id:number){
+  this.filesArr.splice(id,1)
+    console.log('remove clicked');
+  }
   
     
  

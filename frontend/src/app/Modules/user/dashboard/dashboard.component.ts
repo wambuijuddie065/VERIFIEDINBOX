@@ -10,7 +10,8 @@ import { filter, map, startWith } from 'rxjs';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  __URL:string = ""
+  menuVisible:boolean=false
+  
 
   constructor(private router: Router) { 
   
@@ -20,6 +21,11 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
  
   }
+  toggleMenu(){
+    this.menuVisible=!this.menuVisible
+
+  }
+  
  
 
 }
