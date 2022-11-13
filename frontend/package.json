@@ -22,7 +22,9 @@
     "@angular/router": "^14.1.0",
     "@fortawesome/angular-fontawesome": "^0.11.1",
     "bootstrap": "^5.2.2",
+    "creditcardpayments": "^1.0.3",
     "font-awesome": "^4.7.0",
+    "ngx-file-drop": "^14.0.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

@@ -22,13 +22,14 @@
 
         <div class="upload">
             <div *ngIf="filesArr.length else noFiles" class="filesArray">
-                <div  *ngFor="let file of filesArr" class="singleFile">
+                <div  *ngFor="let file of filesArr; let i=index" class="singleFile">
                     <div class="attachment">
                         <div class="attachmentIcon">
                             <img src="../../../../assets/file.png" alt="">
                         </div>
                         
-                        <p>{{file}}</p>
+                        <p *ngIf="itsUpload">{{file}}</p> 
+                        <p *ngIf="!itsUpload">{{file.relativePath}}</p>
                     </div>
                     <div class="actions">
                         <!-- <button style="color: #6A95F6;">+ Add note</button> -->
@@ -40,6 +41,7 @@
                 </div>
                 
             </div>
+            
             
             <ng-template #noFiles>
                 <div class="attachment" >
@@ -75,12 +77,8 @@
         </div>
         
     </div>
-    <div class="divFour">
-        <div>
-            <!-- <mat-icon fontSet="material-icons-outlined" >cloud_upload</mat-icon> -->
-            <img src="../../../../assets/dropfile.png" alt="">
-        </div>
-        
-        <div><p>You can also drop your file here</p></div>
-    </div>
+   
+    <ngx-file-drop  [multiple]="true"  dropZoneLabel="You can also drop your files here" (onFileDrop)="dropped($event)" >
+            
+    </ngx-file-drop>
 </div>

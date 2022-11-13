@@ -2,6 +2,7 @@ import { HttpClient, HttpEventType } from '@angular/common/http';
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 
 import { Router } from '@angular/router';
+import { NgxFileDropEntry } from 'ngx-file-drop'
 
 import { FileUploadService } from 'src/app/Services/file-upload.service';
 
@@ -14,11 +15,12 @@ export class UploadProfileComponent implements OnInit {
 
   @ViewChild('fileInput',{static:false})
   fileInput!:ElementRef 
+  itsUpload:boolean=false
    
     fileName:any;  
-    files:any
+    // public files:=[]
     uploadDivOpen:boolean=false
-    filesArr!:Array<any>
+    filesArr:Array<any> | NgxFileDropEntry[]=[]
     
  
   constructor(private router:Router,private http: HttpClient){
@@ -56,6 +58,7 @@ export class UploadProfileComponent implements OnInit {
       console.log(res);
       this.fileInput.nativeElement.value=""
       this.filesArr.push(res.path)
+      this.itsUpload=true
       
     },err=>{console.log(err);
     })
@@ -70,7 +73,13 @@ export class UploadProfileComponent implements OnInit {
     console.log('remove clicked');
   }
   
-    
+    public dropped(files:NgxFileDropEntry[]){
+      this.filesArr=files
+      this.itsUpload=false
+      console.log(files);
+      
+
+    }
  
     
   

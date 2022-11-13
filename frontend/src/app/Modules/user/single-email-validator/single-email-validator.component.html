@@ -17,9 +17,10 @@
     </div>
     <div class="divThree">
         <p style="font-size:12px;">Email address</p>
+        <small *ngIf="f['email'].errors && f['email'].errors['email']">* Please enter a valid email</small> 
 
-        <div class="emailDiv">
-            <input type="text" placeholder="Please enter email address">
-            <button>Send</button>
-        </div>
+        <form class="emailDiv" (ngSubmit)="onSubmit()" [formGroup]="emailForm" >
+            <input type="text" placeholder="Please enter email address " formControlName="email">
+            <button type="submit">Send</button>
+        </form> 
 </div>

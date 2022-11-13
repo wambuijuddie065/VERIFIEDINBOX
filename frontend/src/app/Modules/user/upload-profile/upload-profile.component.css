@@ -144,9 +144,14 @@
     text-align: center;
     background-color: white;
     border: dashed 2px #6A95F6 ;
-    height: 300px;
+    
     border-radius: 15px;
 }
+
+/* .filedrop{
+    height: 300px;
+    
+} */
 .divFour mat-icon{
     font-size: 30px;
     padding: 10px;

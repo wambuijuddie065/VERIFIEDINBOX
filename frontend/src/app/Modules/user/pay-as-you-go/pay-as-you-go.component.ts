@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {render} from 'creditcardpayments/creditCardPayments'
 
 @Component({
   selector: 'app-pay-as-you-go',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PayAsYouGoComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    render({
+      id:"#paypalBtn",
+      currency:"USD",
+      value:"100.00",
+      onApprove(details) {
+        alert("Transaction successfull")
+        
+      },
+    })
+   }
 
   ngOnInit(): void {
+  }
+  makePayment(amount:number){
+
   }
 
 }

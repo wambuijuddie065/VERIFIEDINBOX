@@ -50,10 +50,12 @@
     justify-content: space-between;
 background-color: #DFE1E8;
 padding: 10px;
-align-items: center;}
+align-items: center;
+cursor: pointer;}
 .left img,.arrow{
         width: 15px;
     height: 15px;
+    
 }
 .priceOne:hover,
 .priceTwo:hover,

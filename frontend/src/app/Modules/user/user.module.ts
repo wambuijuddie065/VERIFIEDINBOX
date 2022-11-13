@@ -24,6 +24,7 @@ import { InvoicesComponent } from './invoices/invoices.component';
 import { GDPRInformationComponent } from './gdpr-information/gdpr-information.component';
 import { AccountOptionComponent } from './account-option/account-option.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxFileDropModule } from 'ngx-file-drop';
 
 
 
@@ -55,7 +56,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     UserRoutingModule,
     MatIconModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxFileDropModule
   ]
 })
 export class UserModule { }
