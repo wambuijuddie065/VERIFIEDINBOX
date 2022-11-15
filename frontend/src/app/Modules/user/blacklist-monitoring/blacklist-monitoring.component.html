@@ -12,12 +12,27 @@
       </p>
       <p>To ensure complete coverage, we recommend that you monitor both your domain and IP address. Unsure of what your domain IP address is? <a href="https://toolbox.googleapps.com/apps/dig/">Use Google's free DNS tool here</a></p>
     </div>
-    <p style="background-color: #dfe1e8; padding: 10px 30px">
-      <b>Click to see the steps to begin monitoring a domain or IP.</b>
+    <p style="background-color: #dfe1e8; padding: 10px 30px;margin:0;cursor: pointer;" (click)="showSteps()">
+      <b >Click to see the steps to begin monitoring a domain or IP.</b>
     </p>
+    <div class="divOne" *ngIf="toggled" >
+      <div>
+       <p> <i> 1. Click to "Add New Monitor".</i></p> 
+       <p>  <i>2. You will be prompted to enter a domain or IP to monitor, which contact list will receive the alerts, and if any notes are needed.</i></p>
+       <p> <i>3. Once you are satisfied with the settings, click "Add" to create the monitoring alert.</i></p>
+      </div>
+      <p style="color: black;">For further information about our Blacklist Monitoring service and how to properly protect 
+        your domain/IP address, be sure to visit our <a href="">documentation page.</a> </p>
+        <p  style="color: black;"><b>Note:</b> By default our alarm system will notify you when your domain or IP has been initially  scanned, then, 
+          only if the status of your domain/IP has changed, i.e. it was added to a blacklist or delisted from one. The number of blacklists we check 
+          against will flactuate. 
+          To ensure proper monitoring, please make sure to monitor your domain, IPv4 and IPv6 addresses.
+        </p>
+      
+    </div>
   </div>
-  <div class="buttons"> <button class="upgradeBtn">Upgrade</button>
-    <button class="activateBtn" routerLink="/user/dashboard/tools-subscription">Activate premium plan</button></div>
+  <div class="buttons"> <button class="upgradeBtn" routerLink="/user/dashboard/tools-subscription">Upgrade</button>
+    <button class="activateBtn" routerLink="/user/dashboard/tools-subscription">Activate freemium plan</button></div>
     <div class="secondDiv">
         <div style="background-color: #dfe1e8; padding: 10px 30px;text-align: center;">
             <p >
@@ -27,20 +42,40 @@
         
            
     <div class="divTwo">
-        <div class="top">
-            <p>DATE</p>|
-            <p>FROM</p>|
-            <p>SUBJECT</p>|
-            <p>WARNINGS</p>|
-            <p>CRITICAL</p>|
-            <p>VIEW RESULT</p>|
-            <p>DELETE</p>
+        <table>
+          <tr class="top">
+            <th>DATE</th>
+            <th>FROM</th>
+            <th>SUBJECT</th>
+            <th>WARNINGS</th>
+            <th>CRITICAL</th>
+            <th>VIEW RESULT</th>
+            <th>DELETE</th>
+          </tr>
+           <tr class="data">
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td><mat-icon>visibility</mat-icon></td>
+            <td><mat-icon>delete</mat-icon></td>
+           </tr>
+           <tr class="data">
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td><mat-icon>visibility</mat-icon></td>
+            <td><mat-icon>delete</mat-icon></td>
+           </tr>
 
 
-        </div>
-        <div class="bottom">
+        </table>
+        <!-- <div class="bottom">
             <p>--No records to display--</p>
-        </div>
+        </div> -->
         <p style="color:red ;font-size:10px;padding-top: 10px;">*All files older than 30 days will be automatically deleted</p>
 
     </div>

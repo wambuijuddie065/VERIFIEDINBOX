@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inbox-placement-tester.component.css']
 })
 export class InboxPlacementTesterComponent implements OnInit {
-
+  toggled:boolean=false
   constructor() { }
 
   ngOnInit(): void {
+  }
+  showSteps(){
+    this.toggled=!this.toggled
   }
 
 }

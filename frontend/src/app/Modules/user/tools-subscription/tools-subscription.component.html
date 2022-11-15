@@ -16,7 +16,7 @@
   <p><b>To start, simply select from one of the options below, and follow the prompts</b></p>
   <div class="bottomDiv">
     <div class="packages">
-        <div class="premium"> 
+        <div class="premium" > 
             <h3> <b>FREEMIUM</b>
                 </h3>  
                 <p>Selected subscription</p>
@@ -25,9 +25,11 @@
                 <p>Email Server Test (1)</p>
                 <p>Blacklist Monitor (1)</p>
                 <p>Scan Frequency (hrs) (24)</p>
-                <button class="activateBtn">Activate Freemium Plan</button>
+                <button class="activateBtn" *ngIf="!freeActivated" (click)="activate()">Activate Freemium Plan</button>
+                <p style="color: #1E214E;margin-top:auto;" *ngIf="freeActivated"><b>ACTIVATED</b> </p>
+
         </div>
-        <div class="starter">
+        <div class="starter" (click)="makePayment(39)">
             <h3> <b>STARTER</b>
             </h3> 
             <p>Selected subscription</p>
@@ -38,7 +40,7 @@
                 <p>Scan Frequency (hrs) (12)</p>
                 <p class="price">$39.00 USD / MONTH</p>
         </div>
-        <div class="pro">
+        <div class="pro" (click)="makePayment(249)">
             <h3> <b>PRO</b>
             </h3> 
             <p>Selected subscription</p>
@@ -49,7 +51,7 @@
                 <p>Scan Frequency (hrs) (08)</p>
                 <p class="price" >$249.00 USD / MONTH</p>
         </div>
-        <div class="enterprise">
+        <div class="enterprise" (click)="makePayment(999)">
             <h3> <b>ENTERPRISE</b>
             </h3> 
             <p>Selected subscription</p>
@@ -62,7 +64,7 @@
         </div>
     </div>
     <p>Buy <b>Enterprise Subscription</b> for <b>$999.00 USD</b> monthly </p>
-    <button class="subscribeBtn">Subscribe Now</button>
+    <button class="subscribeBtn" (click)="makePayment(999)">Subscribe Now</button>
     <div class="payments">
         <img class="paypalImg" src="../../../../assets/paypal.png" alt="" />
         <img

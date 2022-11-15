@@ -12,9 +12,22 @@
         check to see the placement of that email.
       </p>
     </div>
-    <p style="background-color: #dfe1e8; padding: 10px 30px">
+    <p (click)="showSteps()" style="background-color: #dfe1e8;;margin:0; padding: 10px 30px;cursor: pointer;">
       <b>Click to see the steps to perform an inbox placement test.</b>
     </p>
+    <div class="divOne" *ngIf="toggled" >
+      <div>
+       <p> <i> 1. Enter a testing file name (this is to help you identify individual tests).</i> </p> 
+       <p><i>2. Choose which mailbox providers you wish to test by selecting from the dropdown.</i></p>
+       <p><i>3. Click "Create New Test".</i></p>
+       <p><i>4. Copy your custom test code from the box below, and insert into the footer of your email.</i></p>
+       <p><i>5. Copy the newly generated email addresses and add them to a new mailing list in your email marketing service.</i></p>
+      </div>
+      <p style="color: black;"><b> Please note:</b>Some mailbox providers will not deliver one-word emails, 
+      so be sure to test with a natural email or newsletter. Once you create your first test, the results will appear in the table below.</p>
+      
+      
+    </div>
   </div>
   <div class="secondDiv">
     <div class="divTwo">
@@ -33,32 +46,50 @@
         
       </div>
       <div>
-        <div class="top">
-          <p>TEST NAME</p>
-          |
-          <p>TEST CODE</p>
-          |
-          <p>TEST EMAILS</p>
-          |
-          <p>DATE</p>
-          |
-          <p>CREATED BY</p>
-          |
-          <p>MESSAGE</p>
-          |
-          <p>STATUS</p>
-          |
-          <p>INBOX</p>
-          |
-          <p>SPAM</p>
-          |
-          <p>MISSING</p>
-          |
-          <p>DELETE</p>
-        </div>
-        <div class="bottom">
+
+        <table>
+          <tr class="top">
+            <th>TEST NAME</th>
+            <th>TEST CODE</th>
+            <th>DATE</th>
+            <th>CREATED BY</th>
+            <th>MESSAGE</th>
+            <th>STATUS</th>
+            <th>INBOX</th>
+            <th>SPAM</th>
+            <th>MISSING</th>
+            <th>DELETE</th>
+          </tr>
+           <tr class="data">
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td><mat-icon>delete</mat-icon></td>
+           </tr>
+           <tr class="data">
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td>my data</td>
+            <td><mat-icon>delete</mat-icon></td>
+           </tr>
+
+
+        </table>
+        <!-- <div class="bottom">
           <p>--No records to display--</p>
-        </div>
+        </div> -->
   
       </div>
       

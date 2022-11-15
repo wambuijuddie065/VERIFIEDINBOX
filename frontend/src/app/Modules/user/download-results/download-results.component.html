@@ -5,7 +5,7 @@
     <div class="divOne">
         <p> Welcome to your <b>Email Validation Results</b></p>
         <p>To download the results of an email link simply click on the File Name but not
-             before ZeroBounce finishesthe validation, and the download options will appear
+             before VerifiedProfile finishes the validation, and the download options will appear
              . We reccommend only sending to the emails with a valid result. If you want
              to send to any other status please read the status code documentation linked below before you make that decision.
         </p>
@@ -15,24 +15,52 @@
         <button>View historical usage</button>
     </div>
     <div class="divTwo">
-        <div class="top">
-            <p>FILENAME</p>|
-            <p>STATUS</p>|
-            <p>UPLOADDATE</p>|
-            <p>TOTAL</p>|
-            <p>VALID INVALID</p>|
-            <p>CATCH ALL</p>|
-            <p>SPAMTRAP</p>|
-            <p>ABUSE</p>|
-            <p>DO NOT MAIL</p>|
-            <p>UNKNOWN</p>|
-            <p>DELETE</p>
-
-
-        </div>
-        <div class="bottom">
+        <table>
+            <tr class="top">
+              <th>FILENAME</th>
+              <th>STATUS</th>
+              <th>UPLOADDATE</th>
+              <th>WARNINGS</th>
+              <th>VALID INVALID</th>
+              <th>CATCH ALL</th>
+              <th>SPAMTRAP</th>
+              <th>ABUSE</th>
+              <th>DO NOT MAIL</th>
+              <th>UNKNOWN</th>
+              <th>DELETE</th>
+            </tr>
+             <tr class="data">
+              <td>my data</td>
+              <td>my data</td>
+              <td>my data</td>
+              <td>my data</td>
+              <td>my data</td>
+              <td>my data</td>
+              <td>my data</td>
+              <td>my data</td>
+              <td>my data</td>
+              <td>my data</td>
+              <td><mat-icon>delete</mat-icon></td>
+             </tr>
+             <tr class="data">
+              <td>my data</td>
+              <td>my data</td>
+              <td>my data</td>
+              <td>my data</td>
+              <td>my data</td>
+              <td>my data</td>
+              <td>my data</td>
+              <td>my data</td>
+              <td>my data</td>
+              <td>my data</td>
+              <td><mat-icon>delete</mat-icon></td>
+             </tr>
+  
+  
+          </table>
+        <!-- <div class="bottom">
             <p>--No records to display--</p>
-        </div>
+        </div> -->
         <p style="color:red ;font-size:10px;padding-top: 10px;">*All files older than 30 days will be automatically deleted</p>
 
     </div>

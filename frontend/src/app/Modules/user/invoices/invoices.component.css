@@ -71,14 +71,28 @@ label{
     border-radius: 8px;
 }
 .top{
-    display: flex;
-    justify-content: space-between;
     background-color: #eaeaeb;
-    padding: 10px 20px;
     color: lightgray;
     font-weight: 400;
+    font-size: 16px;
     
 
+}
+th,td{
+    border-right: 1px solid lightgray;
+/* min-width: 150px; */
+text-align: center;
+padding:5px;
+}
+table{
+    border-collapse: collapse;
+}
+
+.data{
+    /* padding: 5px; */
+    text-align: center;
+    background-color: white;
+    border-bottom: solid 2px lightgrey;
 }
 .bottom{
     display: flex;

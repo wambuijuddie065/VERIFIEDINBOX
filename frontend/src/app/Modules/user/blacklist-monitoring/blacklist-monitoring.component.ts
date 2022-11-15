@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blacklist-monitoring.component.css']
 })
 export class BlacklistMonitoringComponent implements OnInit {
-
+   toggled:boolean=false
   constructor() { }
 
   ngOnInit(): void {
+  }
+  showSteps(){
+    this.toggled=!this.toggled
   }
 
 }

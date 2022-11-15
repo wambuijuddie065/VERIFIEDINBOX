@@ -2,7 +2,7 @@
   <p>ACCOUNT INFO > ACCOUNT OPTIONS</p>
 </div>
 <div class="mainContainer">
-    <p>ZeroBounce offers teh following option to <b>customize your account </b></p>
+    <p>VerifiedProfile offers the following option to <b>customize your account </b></p>
     <div class="divTwo">
         <div class="update1">
             <p>Update your profile</p>
@@ -20,7 +20,7 @@
             <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleMail()" *ngIf="!isMailOpen">
         </div>
         <div class="mail2" *ngIf="isMailOpen">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
+            <p>Do you want to change your email address? <a href="">Click here</a> to start the email changing process.</p>
         </div>
         <div class="password1">
             <p>Change your password.</p>
@@ -28,7 +28,7 @@
             <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="togglePassword()" *ngIf="!isPasswordOpen">
         </div>
         <div class="password2" *ngIf="isPasswordOpen">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
+            <p>Do you want to change your password or make it more secure? <a href="">Click here</a> to start the password changing process.</p>
         </div>
         <div class="notification1">
             <p>Change your notification settings.</p>
@@ -36,7 +36,7 @@
             <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleNotification()" *ngIf="!isNotificationOpen">
         </div>
         <div class="notification2" *ngIf="isNotificationOpen">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
+            <p>Select the type of communication you want to receive from us. <a href="">Click here</a> to start the selection process.</p>
         </div>
         <div class="time1">
             <p>Change your time zone settings</p>
@@ -44,7 +44,7 @@
             <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleTime()" *ngIf="!isTimeOpen">
         </div>
         <div class="time2" *ngIf="isTimeOpen">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
+            <p>Did you move? <a href="">Click here</a> to change your time zone.</p>
         </div>
         <div class="delete1">
             <p>Delete your account.</p>
@@ -52,15 +52,17 @@
             <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleDelete()" *ngIf="!isDeleteOpen">
         </div>
         <div class="delete2" *ngIf="isDeleteOpen">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
+            <p>No longer need your account? <a href="">Click here</a> to start the account deletion process.</p>
         </div>
         <div class="user1">
-            <p>Manage user.</p>
+            <p>Manage users.</p>
             <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" *ngIf="isUserOpen" (click)="untoggleUser()">
             <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleUser()" *ngIf="!isUserOpen">
         </div>
         <div class="user2" *ngIf="isUserOpen">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
+            <p>By setting up a Team Account, you will be able to invite multiple users to our email validation platform. 
+                <a href="">Click here</a> to start managing your account.
+            </p>
         </div>
         <div class="contact1">
             <p>Manage contact list.</p>
@@ -68,7 +70,9 @@
             <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleContact()" *ngIf="!isContactOpen">
         </div>
         <div class="contact2" *ngIf="isContactOpen">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
+            <p>By setting up Contact Lists, you will be able to add a contact by adding their email addresses to the contact list. 
+                Contact lists can be used in Blacklist Monitoring tool when sending out alert emails. <a href="">Click here</a> to start managing your contact lists.
+            </p>
         </div>
 
     </div>
@@ -79,7 +83,10 @@
             <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleDownload()" *ngIf="!isDownloadOpen">
         </div>
         <div class="downloads2" *ngIf="isDownloadOpen">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
+            <p>If you chose to disable this feature, all your downloads from Verified Profile will no longer be password protected. 
+                If your account is compromised, your data will be at risk. We strongly recommend keeping this option enabled. To disable this feature, you 
+                will receive an email with a link to confirm. Once you confirm, the feature will be disabled. You can re-enable it at anytime.
+            </p>
         </div>
         <div class="auth1">
             <p>Two factor authentication</p>
@@ -87,7 +94,7 @@
             <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleAuth()" *ngIf="!isAuthOpen">
         </div>
         <div class="auth2" *ngIf="isAuthOpen">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
+            <p>If you choose to enable this feature, your account will be more secure requiring you to use two-factor authentication when you log in.</p>
         </div>
         <div class="assumption1">
             <p>Account assumption</p>
@@ -95,7 +102,10 @@
             <img class="arrowRight" src="../../../../assets/arrow-right.png" alt="" (click)="toggleAssumption()" *ngIf="!isAssumptionOpen">
         </div>
         <div class="assumption2" *ngIf="isAssumptionOpen">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, odio?</p>
+            <p>If you choose to enable this feature, VerifiedProfile Tier 2 support team will have access to your account to assist you 
+                in troubleshooting any related account issues. Once enabled, it can be disabled at any time. It will be automatically be disabled in 7 days 
+                from activation.
+            </p>
         </div>
     </div>
  

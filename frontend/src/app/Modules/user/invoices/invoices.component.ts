@@ -22,7 +22,7 @@ export class InvoicesComponent implements OnInit {
   }
   onSave(){
     if (this.invoiceForm.valid) {
-      console.log('Info saved successfully');
+      alert('Info saved successfully');
       console.log(this.invoiceForm.value);
       
       this.invoiceForm.reset()
