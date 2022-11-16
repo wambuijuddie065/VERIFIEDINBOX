@@ -1,0 +1,67 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    color: gray;
+    margin: 15px;
+}
+.middleRight{
+    background-color: #DFE1E8;
+    padding: 10px;
+}
+.divOne,.divTwo{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.divTwo{
+    
+    align-items: center;
+}
+.details{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+label{
+    color: black;
+}
+input,select{
+   padding: 10px;
+   width: 300px;
+   height: 30px;
+   outline: none;
+   border: solid 1px lightgrey;
+}
+select{
+    height: 50px;
+}
+button{
+    background-color: #1E214E;
+    padding: 10px;
+    color: white;
+    width: 150px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    
+}
+span{
+    color: red;
+    font-weight: bold;
+}
+small{
+    color:red;
+    font-size: 13px;
+}
+input.ng-invalid.ng-touched{
+    border: solid 1px red;
+}
+select.ng-invalid.ng-touched{
+    border: solid 1px red;
+}

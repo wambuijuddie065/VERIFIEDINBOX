@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccountOptionComponent } from './account-option/account-option.component';
+import { AccountProfileComponent } from './account-profile/account-profile.component';
 import { AIScoringDownloadComponent } from './ai-scoring-download/ai-scoring-download.component';
 import { AIScoringUploadComponent } from './ai-scoring-upload/ai-scoring-upload.component';
 import { APIKeysComponent } from './api-keys/api-keys.component';
 import { AutopayComponent } from './autopay/autopay.component';
 import { BillingComponent } from './billing/billing.component';
 import { BlacklistMonitoringComponent } from './blacklist-monitoring/blacklist-monitoring.component';
+import { ChangeEmailComponent } from './change-email/change-email.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DeleteAccountComponent } from './delete-account/delete-account.component';
 import { DownloadResultsComponent } from './download-results/download-results.component';
 import { EmailServerTesterComponent } from './email-server-tester/email-server-tester.component';
 import { GDPRInformationComponent } from './gdpr-information/gdpr-information.component';
@@ -50,7 +53,10 @@ const routes: Routes = [
           {path:'billing',component:BillingComponent},
           {path:'invoices',component:InvoicesComponent},
           {path:'GDPR-information',component:GDPRInformationComponent},
-          {path:'account-option',component:AccountOptionComponent}
+          {path:'account-option',component:AccountOptionComponent},
+          {path:'change-email',component:ChangeEmailComponent},
+          {path:'account-profile',component:AccountProfileComponent},
+          {path:'delete-account',component:DeleteAccountComponent}
         ],
       },
     ],

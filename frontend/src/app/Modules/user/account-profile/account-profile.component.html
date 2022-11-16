@@ -1,0 +1,63 @@
+<div class="middleRight">
+    <p>ACCOUNT OPTIONS> ACCOUNT PROFILE</p>
+</div>
+<div class="mainContainer">
+    <div class="divOne">
+        <p>Account <b>Profile</b></p>
+        <p>Welcome to your account profile, please fill out all the information below to access the VerifiedInbox Platform and 
+            to help us better serve you.
+        </p>
+    </div>
+    <form class="divTwo"(ngSubmit)="onSubmit()" [formGroup]="accountForm"  >
+        <span>* Required field </span>
+        <div class="details">
+            <label for="">First Name <span >*</span> :</label>
+            <input type="text" placeholder="First Name (required)" formControlName="firstName"  >
+        </div>
+        <small *ngIf="f['firstName'].touched && f['firstName'].errors && f['firstName'].errors['required'] ">*First Name is required</small>
+        <div class="details">
+            <label for="">Last Name <span >*</span> :</label>
+            <input type="text" placeholder="Last Name (required)" formControlName="lastName">
+        </div>
+        <small *ngIf="f['lastName'].touched && f['lastName'].errors && f['lastName'].errors['required'] ">*Last Name is required</small>
+        <div class="details">
+            <label for="">Title :</label>
+            <input type="text" placeholder="eg: Chief Marketing Officer" formControlName="title"  >
+        </div><div class="details">
+            <label for="">Phone Number <span >*</span> :</label>
+            <input type="text" placeholder="Phone Number (required)" formControlName="phoneNumber"  >
+        </div>
+        <small *ngIf="f['phoneNumber'].touched && f['phoneNumber'].errors && f['phoneNumber'].errors['required'] ">*Phone Number is required</small><div class="details">
+            <label for="">Company Name :</label>
+            <input type="text" placeholder="e.g. VerifiedInbox" formControlName="companyName"  >
+        </div><div class="details">
+            <label for="">Company website :</label>
+            <input type="text" placeholder="www.verifiedinbox.net" formControlName="companyWebsite"  >
+        </div>
+        <div class="details">
+            <label for="">Company Industry <span >*</span> :</label>
+            <select name="" id="" formControlName="companyIndustry">
+                <option value="select">Select industry</option>
+                <option value="Education/E-Learning">Education/E-Learning</option>
+                <option value="Email Service Provider">Email Service Provider</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Financial Services">Financial Services</option>
+                <option value="Gaming / Gambling Casinos">Gaming / Gambling Casinos</option>
+                <option value="Government">Government</option>
+                <option value="Hospital / Healthcare">Hospital / Healthcare</option>
+                <option value="Information / Data Services">Information / Data Services</option>
+                <option value="Marketing / Advertisement">Marketing / Advertisement</option>
+                <option value="Media">Media</option>
+                <option value="Other">Other</option>
+                <option value="Real Estate / Mortgage">Real Estate / Mortgage</option>
+                <option value="Retail">Retail</option>
+                <option value="Software / Hardware">Software / Hardware</option>
+                <option value="Technology">Technology</option>
+                <option value="Telecommunication / Wireless">Telecommunication / Wireless</option>
+                <option value="Transport">Transport</option>
+            </select>
+        </div>
+        <small *ngIf="f['companyIndustry'].touched && f['companyIndustry'].errors && f['companyIndustry'].errors['required'] ">*Company Industry is required</small>
+        <button type="submit">Save</button>
+    </form>
+</div>

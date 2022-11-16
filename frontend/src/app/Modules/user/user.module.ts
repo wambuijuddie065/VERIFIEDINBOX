@@ -25,6 +25,9 @@ import { GDPRInformationComponent } from './gdpr-information/gdpr-information.co
 import { AccountOptionComponent } from './account-option/account-option.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxFileDropModule } from 'ngx-file-drop';
+import { ChangeEmailComponent } from './change-email/change-email.component';
+import { AccountProfileComponent } from './account-profile/account-profile.component';
+import { DeleteAccountComponent } from './delete-account/delete-account.component';
 
 
 
@@ -49,7 +52,10 @@ import { NgxFileDropModule } from 'ngx-file-drop';
     BillingComponent,
     InvoicesComponent,
     GDPRInformationComponent,
-    AccountOptionComponent
+    AccountOptionComponent,
+    ChangeEmailComponent,
+    AccountProfileComponent,
+    DeleteAccountComponent
   ],
   imports: [
     CommonModule,

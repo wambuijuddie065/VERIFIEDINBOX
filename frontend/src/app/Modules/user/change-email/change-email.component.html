@@ -1,0 +1,25 @@
+<div class="middleRight">
+    <p>ACCOUNT OPTIONS> CHANGE YOUR EMAIL</p>
+</div>
+<div class="mainContainer">
+    <div class="divOne">
+        <p>Change <b>Your Email</b></p>
+        <p>Changing your email address also changes your login ID. Once your email is changed, you will receive an email at your 
+            current email address with a validtion link that you must click  first, then you will receive a confirmation 
+            email at your new email address. You need to click on in order for the change to take effect. <b>REMEMBER:</b> 
+            Your new email will become your current login.
+        </p>
+    </div>
+    <form class="divTwo"(ngSubmit)="onSubmit()" [formGroup]="emailForm"  >
+        <div class="email">
+            <label for="">New Email:</label>
+            <input type="text" placeholder="example@email.com" formControlName="newEmail"  >
+        </div>
+        <div class="email">
+            <label for="">Verify Email:</label>
+            <input type="text" placeholder="example@email.com" formControlName="verifyEmail">
+            <!-- <small *ngIf="newEmail==!verifyEmail" >Email doesn't match</small> -->
+        </div>
+        <button type="submit">Change email</button>
+    </form>
+</div>

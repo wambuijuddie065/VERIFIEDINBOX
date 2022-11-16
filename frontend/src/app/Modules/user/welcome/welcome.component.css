@@ -16,6 +16,9 @@
     flex-direction: column;
     gap: 25px;
 }
+a{
+    color: #6A95F6;
+    text-decoration: none;}
 ul{
     list-style-type: none;
     display: flex;

@@ -1,0 +1,39 @@
+<div class="middleRight">
+  <p>ACCOUNT OPTIONS> DELETE YOUR ACCOUNT</p>
+</div>
+<div class="mainContainer">
+  <div class="divOne">
+    <p>Delete <b>Your Account</b></p>
+    <div>
+        <p>
+            Deleting your account will:
+          </p>
+          <p>1. Delete all your Email Validations</p>
+          <p>2. Remove your access to the members area </p>
+    </div>
+    
+    <p>If you wish to create another VerifiedInbox account in the future, you will be able to do so using the same email.</p>
+  </div>
+  <form class="divTwo" (ngSubmit)="onSubmit()" [formGroup]="form">
+    <p>Enter your password below and click the Delete Account button.</p>
+    <small
+    *ngIf="
+      f['password'].touched &&
+      f['password'].errors &&
+      f['password'].errors['required']
+    "
+    >*Password is required</small
+  >
+
+    <div class="details">
+      
+      <input
+        type="password"
+        placeholder="Enter your password"
+        formControlName="password"
+      />
+      <button type="submit">Delete Account</button>
+    </div>
+   
+  </form>
+</div>
