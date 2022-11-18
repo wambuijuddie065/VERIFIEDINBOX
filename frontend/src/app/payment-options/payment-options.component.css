@@ -16,40 +16,49 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-   
 }
-
-
-.details{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-   
-}
-.details p{
-    margin-bottom: auto;
-}
-form{
+.divTwo{
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
+    gap: 30px;
+}
+.divThree{
+    display: flex;
+    width: 80%;
+    gap: 100px;
+    /* justify-content: center; */
     align-self: center;
     
-    gap: 20px;
+
 }
-label{
+
+.left,.right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+    align-content: space-around;
+    height: 250px;
+    padding: 20px;
     color: black;
-    width: 180px;
-    text-align: right;
-    
-    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-select{
-   padding: 10px;
-   width: 300px;
-   height: 50px;
-   outline: none;
-   border: solid 1px lightgrey;
+.title{
+    font-weight: bold;
+    font-size: 16px;
+}
+.desc{
+    text-align: center;
+}
+.left img{
+    width: 40%;
+
+}
+.right img{
+    width: 30%;
+    height: 40%;
 }
 button{
     background-color: #1E214E;
@@ -60,6 +69,7 @@ button{
     outline: none;
     border: none;
     border-radius: 10px;
-    margin-left: 60%;
+    margin-top: auto;
+    
     
 }

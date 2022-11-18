@@ -184,9 +184,9 @@ margin-top: 10px;
     width: fit-content;
     border-radius: 100px;
     align-items: center;
-   position: absolute;
+   /* position: absolute; */
    position: fixed;
-   right: 30%;
+   right: 2.5%;
    top: 90%;
    z-index: 999;
   cursor: pointer;

@@ -25,8 +25,8 @@
                 <p>Email Server Test (1)</p>
                 <p>Blacklist Monitor (1)</p>
                 <p>Scan Frequency (hrs) (24)</p>
-                <button class="activateBtn" *ngIf="!freeActivated" (click)="activate()">Activate Freemium Plan</button>
-                <p style="color: #1E214E;margin-top:auto;" *ngIf="freeActivated"><b>ACTIVATED</b> </p>
+                <button class="activateBtn" routerLink="/user/dashboard/welcome">Activate Freemium Plan</button>
+                <!-- <p style="color: #1E214E;margin-top:auto;" *ngIf="freeActivated"><b>ACTIVATED</b> </p> -->
 
         </div>
         <div class="starter" (click)="makePayment(39)">

@@ -1,0 +1,59 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    padding: 25px;
+    color: gray;
+    margin: 15px;
+    background-color: white;
+}
+
+.middleRight{
+    background-color: #DFE1E8;
+    padding: 10px;
+}
+.divOne{
+   
+    display: flex;
+    flex-direction: column;
+   
+   
+}
+.diTwo{
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.top{
+    background-color: #eaeaeb;
+    color: lightgray;
+    font-weight: 400;
+ 
+
+}
+th,td{
+    border-right: 1px solid lightgray;
+min-width: 90px;
+text-align: center;
+padding:5px ;
+}
+th a{
+    color: black;
+    text-decoration: none;
+}
+table{
+    border-collapse: collapse;
+}
+
+.data{
+    /* padding: 5px; */
+    text-align: center;
+    background-color: white;
+    border-bottom: solid 2px lightgrey;
+}
+.divTwo p span{
+    color: #1E214E;
+    font-weight: bold;
+    
+}

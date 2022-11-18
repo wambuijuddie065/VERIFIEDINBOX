@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PaymentOptionsComponent } from 'src/app/payment-options/payment-options.component';
 import { AccountOptionComponent } from './account-option/account-option.component';
 import { AccountProfileComponent } from './account-profile/account-profile.component';
 import { AIScoringDownloadComponent } from './ai-scoring-download/ai-scoring-download.component';
@@ -20,6 +21,8 @@ import { GDPRInformationComponent } from './gdpr-information/gdpr-information.co
 import { InboxPlacementTesterComponent } from './inbox-placement-tester/inbox-placement-tester.component';
 import { IntegrationsComponent } from './integrations/integrations.component';
 import { InvoicesComponent } from './invoices/invoices.component';
+import { ManageContactListsComponent } from './manage-contact-lists/manage-contact-lists.component';
+import { ManageUsersComponent } from './manage-users/manage-users.component';
 import { NotificationSettingsComponent } from './notification-settings/notification-settings.component';
 import { PayAsYouGoComponent } from './pay-as-you-go/pay-as-you-go.component';
 import { SingleEmailValidatorComponent } from './single-email-validator/single-email-validator.component';
@@ -48,7 +51,7 @@ const routes: Routes = [
           {path:'API_keys',component:APIKeysComponent},
           {path:'AI-scoring-upload',component:AIScoringUploadComponent},
           {path:'AI-scoring-download',component:AIScoringDownloadComponent},
-          {path:'Pay-as-you-go',component:PayAsYouGoComponent},
+          {path:'pay-as-you-go',component:PayAsYouGoComponent},
           {path:'subscription',component:SubscriptionComponent},
           {path:'autopay',component:AutopayComponent},
           {path:'inbox-placement-tester',component:InboxPlacementTesterComponent},
@@ -66,7 +69,10 @@ const routes: Routes = [
           {path:'api-callback-status',component:ApiCallbackStatusComponent},
           {path:'change-password',component:ChangeYourPasswordComponent},
           {path:'notification-settings',component:NotificationSettingsComponent},
-          {path:'change-time-zone',component:ChangeTimeZoneComponent}
+          {path:'change-time-zone',component:ChangeTimeZoneComponent},
+          {path:'manage-users',component:ManageUsersComponent},
+          {path:'manage-contact-lists',component:ManageContactListsComponent},
+          {path:'payment-options',component:PaymentOptionsComponent}
         ],
       },
     ],

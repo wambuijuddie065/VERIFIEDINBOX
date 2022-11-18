@@ -1,0 +1,39 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    color: gray;
+    margin: 15px;
+}
+.middleRight{
+    background-color: #DFE1E8;
+    padding: 10px;
+}
+.divOne,.divTwo{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.divTwo{
+    
+    align-items: center;
+    min-height: 100px;
+}
+.alert{
+    padding: 10px;
+    border: solid 1px red;
+    border-radius: 10px;
+    background-color: #F8CFCF;
+    font-weight: 500;
+    width: 100%;
+    
+}
+.alert span{
+    color: red;
+}
+a{
+    color: #6A95F6;
+    text-decoration: none;}
