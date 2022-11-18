@@ -27,6 +27,7 @@ export class AccountProfileComponent implements OnInit {
   onSubmit(){
     if (this.accountForm.valid) {
       console.log(this.accountForm.value);
+      this.accountForm.reset()
       
       
     } else {

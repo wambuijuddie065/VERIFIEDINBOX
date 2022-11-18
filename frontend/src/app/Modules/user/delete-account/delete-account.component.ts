@@ -21,6 +21,7 @@ return this.form.controls
   onSubmit(){
     if (this.form.valid) {
       console.log(this.form.value);
+      this.form.reset()
       
       
     } else {

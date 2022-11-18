@@ -28,6 +28,14 @@ import { NgxFileDropModule } from 'ngx-file-drop';
 import { ChangeEmailComponent } from './change-email/change-email.component';
 import { AccountProfileComponent } from './account-profile/account-profile.component';
 import { DeleteAccountComponent } from './delete-account/delete-account.component';
+import { YourApiKeysComponent } from './your-api-keys/your-api-keys.component';
+import { ApiUsageDashboardComponent } from './api-usage-dashboard/api-usage-dashboard.component';
+import { ApiCallbackStatusComponent } from './api-callback-status/api-callback-status.component';
+import { ChangeYourPasswordComponent } from './change-your-password/change-your-password.component';
+import { NotificationSettingsComponent } from './notification-settings/notification-settings.component';
+import { ChangeTimeZoneComponent } from './change-time-zone/change-time-zone.component';
+import { ManageUsersComponent } from './manage-users/manage-users.component';
+import { ManageContactListsComponent } from './manage-contact-lists/manage-contact-lists.component';
 
 
 
@@ -55,7 +63,15 @@ import { DeleteAccountComponent } from './delete-account/delete-account.componen
     AccountOptionComponent,
     ChangeEmailComponent,
     AccountProfileComponent,
-    DeleteAccountComponent
+    DeleteAccountComponent,
+    YourApiKeysComponent,
+    ApiUsageDashboardComponent,
+    ApiCallbackStatusComponent,
+    ChangeYourPasswordComponent,
+    NotificationSettingsComponent,
+    ChangeTimeZoneComponent,
+    ManageUsersComponent,
+    ManageContactListsComponent
   ],
   imports: [
     CommonModule,

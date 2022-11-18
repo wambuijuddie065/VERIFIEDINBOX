@@ -1,0 +1,68 @@
+<div class="middleRight">
+    <p>ACCOUNT OPTIONS> NOTIFICATION SETTINGS</p>
+</div>
+<div class="mainContainer">
+    <div class="divOne">
+        <p>Notification <b>Settings</b></p>
+            <p>VerifiedInbox has the ability to send out email notifications to keep you up to date about 
+                different events and useful information. We understand that some notifications are important to some customers, but might not be of importance 
+                to you.
+        </p>
+        
+
+    </div>
+    <div class="divTwo">
+    <form (ngSubmit)="onSubmit()" [formGroup]="form"  >
+        <div class="details">
+            <p><b>Account:</b></p>
+            <div class="check">
+                <input type="checkbox" name="" id="">
+                <p>Notify me when my account is accessed by a new IP address.</p>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="" id="">
+                <p>Notify me about unused credits after 90 days of inactivity.</p>
+            </div>
+        </div>
+        <div class="details">
+            <p><b>Email Validation and Scoring:</b></p>
+            <div class="check">
+                <input type="checkbox" name="" id="">
+                <p>Notify me when my email is ready to be downloaded.</p>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="" id="">
+                <p>Notify me 7 days early before my uploaded files are deleted.</p>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="" id="">
+                <p>Notify me 2 days early before my uploaded files are deleted.</p>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="" id="">
+                <p>Notify me when my credit balance is under <input class="creditInput" type="number" placeholder="25"> credits .</p>
+            </div>
+        </div>
+        <div class="details">
+            <p><b>Deliverability Tools:</b></p>
+            <div class="check">
+                <input type="checkbox" name="" id="">
+                <p>Notify me when my tests are completed.</p>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="" id="">
+                <p>Notify me 7 days early before my tests are deleted.</p>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="" id="">
+                <p>Notify me 2 days early before my tests are deleted.</p>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="" id="">
+                <p>Notify me when I am out of tests.</p>
+            </div>
+          
+        </div>
+        <button type="submit"> Save Changes</button>
+    </form>
+</div>

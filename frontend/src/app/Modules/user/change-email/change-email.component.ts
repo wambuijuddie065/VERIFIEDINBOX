@@ -23,6 +23,7 @@ export class ChangeEmailComponent implements OnInit {
   onSubmit(){
     if (this.emailForm.valid) {
       console.log(this.emailForm.value);
+      this.emailForm.reset()
       
       
     } else {
