@@ -34,6 +34,7 @@
     height: 40px;
     padding: 20px;
     align-items: center;
+    
    
 
 
@@ -43,7 +44,9 @@
     flex-direction: column;
     gap: 20px;
     padding: 20px 12px 80px 12px;
-    min-width:20% ;
+    /* min-width:20% ; */
+    width: 20.5%;
+    
     /* display: none; */
     
    
@@ -228,4 +231,14 @@ margin-top: 10px;
 }
 .transition{
     transition: left 3sec;
+}
+@media screen and (max-width: 1184px) {
+    .topLeft img{
+        width: 80%;
+
+    }
+    .topLeft{
+        padding-left: 0;
+        padding-right: 40px;
+    }
 }

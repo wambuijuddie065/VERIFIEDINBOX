@@ -60,3 +60,11 @@ li img{
     justify-content: right;
     
 }
+
+@media screen and (max-width:1222px){
+    .contactBtn{
+        justify-content: left;
+        padding-left:20px;
+    }
+    
+}
