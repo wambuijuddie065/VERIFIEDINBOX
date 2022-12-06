@@ -11,6 +11,7 @@ import { filter, map, startWith } from 'rxjs';
 })
 export class DashboardComponent implements OnInit {
   menuVisible:boolean=false
+  profileVisible:boolean=false
   
 
   constructor(private router: Router) { 
@@ -24,6 +25,9 @@ export class DashboardComponent implements OnInit {
   toggleMenu(){
     this.menuVisible=!this.menuVisible
 
+  }
+  toggleProfile(){
+    this.profileVisible=!this.profileVisible
   }
   
  

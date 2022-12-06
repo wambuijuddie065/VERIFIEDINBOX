@@ -6,6 +6,9 @@
 .upperDiv,.lowerDiv{
     display: flex;
 }
+.upperDiv2{display: none;}
+
+
 
 
 .topLeft{
@@ -115,6 +118,34 @@ padding: 10px;
 }
 .profileDetails img{
     cursor: pointer;
+}
+
+.arrowRight{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+   
+}
+.profileToggle{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 9999;
+    margin: auto;
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    top: 70px;
+
+}
+.profileToggle a{
+    text-decoration: none;
+    color: black;
 }
 .emailIcon,.logoutIcon{
     width: 20px;
@@ -231,7 +262,9 @@ margin-top: 10px;
 }
 .transition{
     transition: left 3sec;
+    
 }
+
 @media screen and (max-width: 1184px) {
     .topLeft img{
         width: 80%;
@@ -241,4 +274,63 @@ margin-top: 10px;
         padding-left: 0;
         padding-right: 40px;
     }
+}
+@media screen and (max-width: 959px) {
+    .upperDiv2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        /* border-bottom: solid 2px #DFE1E8; */
+        background-color:#F3F6F9;
+    }
+    .upperDiv2 .logo{
+        width: 23vw;
+        /* height: 4vh; */
+  
+    }
+    .upperDiv2 mat-icon{
+        font-size: 40px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .profileDetails2{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+       
+        
+    }
+    .upperDiv{
+        display: none;
+    }
+    
+    .contact{
+        margin-bottom: 100px;
+   
+      
+    }
+    .copyrightDiv{
+        width: fit-content;
+    }
+}
+@media screen and (max-width: 653px){
+    .chatDiv{
+      
+        gap: 10px;
+        padding: 10px ;
+        height: fit-content;
+        
+      
+     
+    }
+    .chatDiv img{
+        width: 25px;
+    }
+    .chatDiv p{
+        font-size: 14px;
+        
+    }
+   
+    
 }

@@ -27,8 +27,26 @@
 
          
         </div>
+       
     </div>
    
+</div>
+<div class="upperDiv2">
+    
+        <mat-icon (click)="toggleMenu()">menu</mat-icon>
+        <img class="logo" src="../../../../assets/logo.png" alt="">
+        <div class="profileDetails2">
+            <img class="avatarIcon" src="../../../../assets/av.png" alt="">
+            <img class="arrowRight" src="../../../../assets/arrow-down.png" alt="" (click)="toggleProfile()">
+
+        </div>
+        <div class="profileToggle" *ngIf="profileVisible">         <!-- <p>Benard Odote</p> -->
+
+            <a href="">Messages</a>
+            <a href="">Notifications</a>
+            <a href="" routerLink="/home" >Logout</a>
+            
+        </div>
 </div>
 <div class="lowerDiv" >
     <div class="bottomLeft" *ngIf=" !menuVisible" >
