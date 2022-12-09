@@ -95,3 +95,31 @@ box-shadow: 2px 2px 2px 2px lightgray;
     height: 15px;
     margin-bottom: auto;
 }
+@media screen and (max-width:910px) {
+    .packages{
+        flex-wrap: wrap;
+      justify-content: center;
+    }
+
+}
+@media screen and (max-width:776px) {
+    .premium,.starter,.pro,.enterprise{
+        
+        width: 250px;}
+        
+}
+@media screen and (max-width:670px) {
+    .premium,.starter,.pro,.enterprise{
+        
+        width:100%;
+    height: fit-content;}
+    .iconV{
+        width: 30%;
+    }
+.packages{
+    gap:20px
+}}
+        
+
+
+

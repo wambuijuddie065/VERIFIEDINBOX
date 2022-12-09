@@ -69,6 +69,7 @@ padding:8px 5px;
 }
 table{
     border-collapse: collapse;
+    width: 100%;
 }
 
 .data{
@@ -86,4 +87,12 @@ table{
     min-height: 300px;
     color: lightgrey;
    
+}
+@media screen and (max-width:468px) 
+{
+    .buttons{
+        flex-direction: column;    }
+        .buttons button{
+            width: 100%;
+        }
 }

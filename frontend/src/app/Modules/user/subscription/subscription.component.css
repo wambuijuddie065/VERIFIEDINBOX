@@ -95,3 +95,26 @@ cursor: pointer;}
     gap: 20px;
     align-items: center;
 }
+@media screen  and (max-width:946px){
+    .left,.right{
+        width: 50%;
+    }
+    .package {
+        
+        width: 100%;}
+    
+}
+@media screen  and (max-width:872px){
+
+    .divBottom {
+    flex-direction: column;
+}
+.left,.right{
+    width: 100%;
+}
+.right,.left{
+    /* border: solid 2px red; */
+    padding: 10px;
+    
+}
+}

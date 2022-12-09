@@ -62,15 +62,30 @@
 
 }
 .top{
-    display: flex;
-    justify-content: space-between;
     background-color: #eaeaeb;
-    padding: 10px 20px;
     color: lightgray;
     font-weight: 400;
-    font-size: 22px;
+    /* font-size: 16px; */
     
 
+}
+th,td{
+    border-right: 1px solid lightgray;
+width: 100px;
+text-align: center;
+padding:6px ;
+}
+table{
+    
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.data{
+    /* padding: 5px; */
+    text-align: center;
+    background-color: white;
+    border-bottom: solid 2px lightgrey;
 }
 .bottom{
     display: flex;
@@ -80,4 +95,20 @@
     min-height: 300px;
     color: lightgrey;
    
+}
+@media screen and (max-width:482px) {
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    .buttons button{
+        width: 100%;
+
+    }
+    input{
+        width: 200px;
+    }
+    .inputs button{
+        padding: 4px;
+    }
 }

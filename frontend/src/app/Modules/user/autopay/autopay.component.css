@@ -36,3 +36,10 @@
     background-color: #1E214E;
    
 }
+@media  screen and (max-width:418px) {
+    .divTwo{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}

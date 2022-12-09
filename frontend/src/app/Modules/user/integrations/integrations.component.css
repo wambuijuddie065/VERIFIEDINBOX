@@ -30,10 +30,13 @@
     justify-content: center;
     padding: 20px;
     border: solid 2px #F7F9FB;
+    width: 250px;
 }
 .file mat-icon{
-    width: 150px;
-    height: 120px;
+    /* width: 150px;
+    height: 120px; */
+    width: fit-content;
+    height: fit-content;
     font-size: 120px;
     color: grey;
 
@@ -63,3 +66,16 @@
 .file:hover{
     border: solid 2px #C7E2FF ;
 } */
+
+@media screen and (max-width:938px) {
+    .file{
+        width:50vw ;
+    }
+    
+}
+@media screen and (max-width:930px) {
+    .file{
+        width:100%;
+    }
+    
+}
